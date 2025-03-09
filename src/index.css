@@ -1,0 +1,82 @@
+@import "tailwindcss";
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  /* display: flex; */
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+  transition: background-color 0.3s ease, color 0.3s ease; /* Hiệu ứng chuyển đổi */
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+.theme-light {
+  background-color: #ffffff; /* Nền trắng */
+  color: #000000; /* Màu chữ */
+}
+
+.theme-light a {
+  color: #000000;
+}
+
+/* Dark mode */
+.theme-dark {
+  background-color: #1f1f1f; /* Nền tối */
+  color: #ffffff; /* Màu chữ */
+}
+
+.theme-dark a {
+  color: #ffffff; /* Màu chữ */
+}
+
+.scroll-custom::-webkit-scrollbar {
+  width: 5px; /* Độ rộng của thanh cuộn dọc */
+  height: 10px; /* Độ cao của thanh cuộn ngang */
+}
+
+/* Thay đổi màu nền của thanh cuộn */
+.scroll-custom::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Màu nền của track (phần chứa thanh cuộn) */
+  border-radius: 20px; /* Bo tròn các góc của track */
+}
+
+/* Thay đổi kiểu của thanh cuộn */
+.scroll-custom::-webkit-scrollbar-thumb {
+  background: #837f81; /* Màu của thanh cuộn */
+  border-radius: 20px; /* Bo tròn các góc của thanh cuộn */
+}
+
+/* Thay đổi kiểu khi hover vào thanh cuộn */
+.scroll-custom::-webkit-scrollbar-thumb:hover {
+  background: #555; /* Màu của thanh cuộn khi hover */
+}
+
+

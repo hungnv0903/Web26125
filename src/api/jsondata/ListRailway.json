@@ -1,0 +1,1689 @@
+[
+	{
+		"Code": "AHO",
+		"Name_Vi": "An Hòa",
+		"Name_En": "",
+		"Name_Cn": "",
+		"Visible": true
+	},
+	{
+		"Code": "ATC",
+		"Name_Vi": "Ấm Tượng (cũ)",
+		"Name_En": "",
+		"Name_Cn": "",
+		"Visible": true
+	},
+	{
+		"Code": "ATH",
+		"Name_Vi": "Ấm Thượng",
+		"Name_En": "",
+		"Name_Cn": "",
+		"Visible": true
+	},
+	{
+		"Code": "BAH",
+		"Name_Vi": "Bắc Hồng",
+		"Name_En": "",
+		"Name_Cn": "",
+		"Visible": true
+	},
+	{
+		"Code": "BAS",
+		"Name_Vi": "Bảo Sơn",
+		"Name_En": "",
+		"Name_Cn": "",
+		"Visible": true
+	},
+	{
+		"Code": "BAT",
+		"Name_Vi": "Bắc Thủy",
+		"Name_En": "",
+		"Name_Cn": "",
+		"Visible": true
+	},
+	{
+		"Code": "BCO",
+		"Name_Vi": "Bàn Cờ",
+		"Name_En": "",
+		"Name_Cn": "",
+		"Visible": true
+	},
+	{
+		"Code": "BDI",
+		"Name_Vi": "Bình Định",
+		"Name_En": "",
+		"Name_Cn": "",
+		"Visible": true
+	},
+	{
+		"Code": "BGA",
+		"Name_Vi": "Bắc Giang (cũ)",
+		"Name_En": "",
+		"Name_Cn": "",
+		"Visible": true
+	},
+	{
+		"Code": "BGI",
+		"Name_Vi": "Bắc Giang",
+		"Name_En": "",
+		"Name_Cn": "",
+		"Visible": true
+	},
+	{
+		"Code": "BHA",
+		"Name_Vi": "Bảo Hà",
+		"Name_En": "",
+		"Name_Cn": "",
+		"Visible": true
+	},
+	{
+		"Code": "BHO",
+		"Name_Vi": "Biên Hoà",
+		"Name_En": "",
+		"Name_Cn": "",
+		"Visible": true
+	},
+	{
+		"Code": "BLB",
+		"Name_Vi": "Bắc Lệ",
+		"Name_En": "",
+		"Name_Cn": "",
+		"Visible": true
+	},
+	{
+		"Code": "BLC",
+		"Name_Vi": "Bắc Lệ (cũ)",
+		"Name_En": "",
+		"Name_Cn": "",
+		"Visible": true
+	},
+	{
+		"Code": "BLE",
+		"Name_Vi": "Bắc Lệ (cũ)",
+		"Name_En": "",
+		"Name_Cn": "",
+		"Visible": true
+	},
+	{
+		"Code": "BLU",
+		"Name_Vi": "Bình Lục",
+		"Name_En": "",
+		"Name_Cn": "",
+		"Visible": true
+	},
+	{
+		"Code": "BNC",
+		"Name_Vi": "Bắc Ninh (cũ)",
+		"Name_En": "",
+		"Name_Cn": "",
+		"Visible": true
+	},
+	{
+		"Code": "BNI",
+		"Name_Vi": "Bắc Ninh",
+		"Name_En": "",
+		"Name_Cn": "",
+		"Visible": true
+	},
+	{
+		"Code": "BSN",
+		"Name_Vi": "Bồng Sơn",
+		"Name_En": "",
+		"Name_Cn": "",
+		"Visible": true
+	},
+	{
+		"Code": "BSO",
+		"Name_Vi": "Bỉm Sơn",
+		"Name_En": "",
+		"Name_Cn": "",
+		"Visible": true
+	},
+	{
+		"Code": "BTH",
+		"Name_Vi": "Bản Thí",
+		"Name_En": "",
+		"Name_Cn": "",
+		"Visible": true
+	},
+	{
+		"Code": "CCC",
+		"Name_Vi": "Chí Chủ (cũ)",
+		"Name_En": "",
+		"Name_Cn": "",
+		"Visible": true
+	},
+	{
+		"Code": "CCH",
+		"Name_Vi": "Chí Chủ",
+		"Name_En": "",
+		"Name_Cn": "",
+		"Visible": true
+	},
+	{
+		"Code": "CGA",
+		"Name_Vi": "Cẩm Giàng",
+		"Name_En": "",
+		"Name_Cn": "",
+		"Visible": true
+	},
+	{
+		"Code": "CGI",
+		"Name_Vi": "Cầu Giát",
+		"Name_En": "",
+		"Name_Cn": "",
+		"Visible": true
+	},
+	{
+		"Code": "CHA",
+		"Name_Vi": "Cầu Hai",
+		"Name_En": "",
+		"Name_Cn": "",
+		"Visible": true
+	},
+	{
+		"Code": "CLA",
+		"Name_Vi": "Chi Lăng",
+		"Name_En": "",
+		"Name_Cn": "",
+		"Visible": true
+	},
+	{
+		"Code": "CLE",
+		"Name_Vi": "Chu Lễ",
+		"Name_En": "",
+		"Name_Cn": "",
+		"Visible": true
+	},
+	{
+		"Code": "CLI",
+		"Name_Vi": "Chí Linh",
+		"Name_En": "",
+		"Name_Cn": "",
+		"Visible": true
+	},
+	{
+		"Code": "CLO",
+		"Name_Vi": "Cổ Loa",
+		"Name_En": "",
+		"Name_Cn": "",
+		"Visible": true
+	},
+	{
+		"Code": "CLY",
+		"Name_Vi": "Cẩm Lý",
+		"Name_En": "",
+		"Name_Cn": "",
+		"Visible": true
+	},
+	{
+		"Code": "CNA",
+		"Name_Vi": "Cà Ná",
+		"Name_En": "",
+		"Name_Cn": "",
+		"Visible": true
+	},
+	{
+		"Code": "CNH",
+		"Name_Vi": "Cầu Nhò",
+		"Name_En": "",
+		"Name_Cn": "",
+		"Visible": true
+	},
+	{
+		"Code": "CPC",
+		"Name_Vi": "Cổ Phúc (cũ)",
+		"Name_En": "",
+		"Name_Cn": "",
+		"Visible": true
+	},
+	{
+		"Code": "CPH",
+		"Name_Vi": "Cổ Phúc",
+		"Name_En": "",
+		"Name_Cn": "",
+		"Visible": true
+	},
+	{
+		"Code": "CSC",
+		"Name_Vi": "Chợ Sy",
+		"Name_En": "",
+		"Name_Cn": "",
+		"Visible": true
+	},
+	{
+		"Code": "CSY",
+		"Name_Vi": "Chợ Sy (cũ)",
+		"Name_En": "",
+		"Name_Cn": "",
+		"Visible": true
+	},
+	{
+		"Code": "DAL",
+		"Name_Vi": "Đà Lạt",
+		"Name_En": "",
+		"Name_Cn": "",
+		"Visible": true
+	},
+	{
+		"Code": "DAN",
+		"Name_Vi": "Đông Anh",
+		"Name_En": "",
+		"Name_Cn": "",
+		"Visible": true
+	},
+	{
+		"Code": "DAP",
+		"Name_Vi": "Đa Phúc",
+		"Name_En": "",
+		"Name_Cn": "",
+		"Visible": true
+	},
+	{
+		"Code": "DAT",
+		"Name_Vi": "Đà Lạt",
+		"Name_En": "",
+		"Name_Cn": "",
+		"Visible": true
+	},
+	{
+		"Code": "DCH",
+		"Name_Vi": "Đồng Chuối",
+		"Name_En": "",
+		"Name_Cn": "",
+		"Visible": true
+	},
+	{
+		"Code": "DDA",
+		"Name_Vi": "Đồng Đăng",
+		"Name_En": "",
+		"Name_Cn": "",
+		"Visible": true
+	},
+	{
+		"Code": "DDC",
+		"Name_Vi": "Đồng Đăng (cũ)",
+		"Name_En": "",
+		"Name_Cn": "",
+		"Visible": true
+	},
+	{
+		"Code": "DGI",
+		"Name_Vi": "Đồng Giao",
+		"Name_En": "",
+		"Name_Cn": "",
+		"Visible": true
+	},
+	{
+		"Code": "DHA",
+		"Name_Vi": "Đông Hà",
+		"Name_En": "",
+		"Name_Cn": "",
+		"Visible": true
+	},
+	{
+		"Code": "DHC",
+		"Name_Vi": "Đồng Hới (cũ)",
+		"Name_En": "",
+		"Name_Cn": "",
+		"Visible": true
+	},
+	{
+		"Code": "DHO",
+		"Name_Vi": "Đồng Hới",
+		"Name_En": "",
+		"Name_Cn": "",
+		"Visible": true
+	},
+	{
+		"Code": "DIA",
+		"Name_Vi": "Dĩ An",
+		"Name_En": "",
+		"Name_Cn": "",
+		"Visible": true
+	},
+	{
+		"Code": "DLA",
+		"Name_Vi": "Đại Lãnh",
+		"Name_En": "",
+		"Name_Cn": "",
+		"Visible": true
+	},
+	{
+		"Code": "DLC",
+		"Name_Vi": "Đồng Lê (cũ)",
+		"Name_En": "",
+		"Name_Cn": "",
+		"Visible": true
+	},
+	{
+		"Code": "DLE",
+		"Name_Vi": "Đồng Lê",
+		"Name_En": "",
+		"Name_Cn": "",
+		"Visible": true
+	},
+	{
+		"Code": "DMC",
+		"Name_Vi": "Đồng Mỏ (cũ)",
+		"Name_En": "",
+		"Name_Cn": "",
+		"Visible": true
+	},
+	{
+		"Code": "DMD",
+		"Name_Vi": "Đồng Mỏ",
+		"Name_En": "",
+		"Name_Cn": "",
+		"Visible": true
+	},
+	{
+		"Code": "DMO",
+		"Name_Vi": "Đồng Mỏ (cũ)",
+		"Name_En": "",
+		"Name_Cn": "",
+		"Visible": true
+	},
+	{
+		"Code": "DNA",
+		"Name_Vi": "Đà Nẵng",
+		"Name_En": "",
+		"Name_Cn": "",
+		"Visible": true
+	},
+	{
+		"Code": "DOT",
+		"Name_Vi": "Đông Triều",
+		"Name_En": "",
+		"Name_Cn": "",
+		"Visible": true
+	},
+	{
+		"Code": "DPH",
+		"Name_Vi": "Đức Phổ",
+		"Name_En": "",
+		"Name_Cn": "",
+		"Visible": true
+	},
+	{
+		"Code": "DSA",
+		"Name_Vi": "Diêu Sanh",
+		"Name_En": "",
+		"Name_Cn": "",
+		"Visible": true
+	},
+	{
+		"Code": "DTA",
+		"Name_Vi": "Đông Tác",
+		"Name_En": "",
+		"Name_Cn": "",
+		"Visible": true
+	},
+	{
+		"Code": "DTC",
+		"Name_Vi": "Đoan Thượng (cũ)",
+		"Name_En": "",
+		"Name_Cn": "",
+		"Visible": true
+	},
+	{
+		"Code": "DTH",
+		"Name_Vi": "Đoan Thượng",
+		"Name_En": "",
+		"Name_Cn": "",
+		"Visible": true
+	},
+	{
+		"Code": "DTR",
+		"Name_Vi": "Diêu Trì",
+		"Name_En": "",
+		"Name_Cn": "",
+		"Visible": true
+	},
+	{
+		"Code": "DUL",
+		"Name_Vi": "Đức Lạc",
+		"Name_En": "",
+		"Name_Cn": "",
+		"Visible": true
+	},
+	{
+		"Code": "GBA",
+		"Name_Vi": "Giáp Bát",
+		"Name_En": "",
+		"Name_Cn": "",
+		"Visible": true
+	},
+	{
+		"Code": "GHU",
+		"Name_Vi": "Gia Huynh",
+		"Name_En": "",
+		"Name_Cn": "",
+		"Visible": true
+	},
+	{
+		"Code": "GIA",
+		"Name_Vi": "Giã",
+		"Name_En": "",
+		"Name_Cn": "",
+		"Visible": true
+	},
+	{
+		"Code": "GLA",
+		"Name_Vi": "Gia Lâm (cũ)",
+		"Name_En": "",
+		"Name_Cn": "",
+		"Visible": true
+	},
+	{
+		"Code": "GLH",
+		"Name_Vi": "Gia Lâm",
+		"Name_En": "",
+		"Name_Cn": "",
+		"Visible": true
+	},
+	{
+		"Code": "GRA",
+		"Name_Vi": "Gia Ray",
+		"Name_En": "",
+		"Name_Cn": "",
+		"Visible": true
+	},
+	{
+		"Code": "HAC",
+		"Name_Vi": "Hoàn Lão (cũ)",
+		"Name_En": "",
+		"Name_Cn": "",
+		"Visible": true
+	},
+	{
+		"Code": "HDO",
+		"Name_Vi": "Hà Đông",
+		"Name_En": "",
+		"Name_Cn": "",
+		"Visible": true
+	},
+	{
+		"Code": "HDU",
+		"Name_Vi": "Hải Dương",
+		"Name_En": "",
+		"Name_Cn": "",
+		"Visible": true
+	},
+	{
+		"Code": "HLA",
+		"Name_Vi": "Hoàn Lão",
+		"Name_En": "",
+		"Name_Cn": "",
+		"Visible": true
+	},
+	{
+		"Code": "HLC",
+		"Name_Vi": "Hạ Long (cũ)",
+		"Name_En": "",
+		"Name_Cn": "",
+		"Visible": true
+	},
+	{
+		"Code": "HLO",
+		"Name_Vi": "Hạ Long",
+		"Name_En": "",
+		"Name_Cn": "",
+		"Visible": true
+	},
+	{
+		"Code": "HMA",
+		"Name_Vi": "Hoàng Mai",
+		"Name_En": "",
+		"Name_Cn": "",
+		"Visible": true
+	},
+	{
+		"Code": "HNO",
+		"Name_Vi": "Hà Nội",
+		"Name_En": "",
+		"Name_Cn": "",
+		"Visible": true
+	},
+	{
+		"Code": "HPH",
+		"Name_Vi": "Hải Phòng",
+		"Name_En": "",
+		"Name_Cn": "",
+		"Visible": true
+	},
+	{
+		"Code": "HPO",
+		"Name_Vi": "Hương Phố",
+		"Name_En": "",
+		"Name_Cn": "",
+		"Visible": true
+	},
+	{
+		"Code": "HSY",
+		"Name_Vi": "Hiền Sỹ",
+		"Name_En": "",
+		"Name_Cn": "",
+		"Visible": true
+	},
+	{
+		"Code": "HTH",
+		"Name_Vi": "Hà Thanh",
+		"Name_En": "",
+		"Name_Cn": "",
+		"Visible": true
+	},
+	{
+		"Code": "HTU",
+		"Name_Vi": "Hương Thủy",
+		"Name_En": "",
+		"Name_Cn": "",
+		"Visible": true
+	},
+	{
+		"Code": "HUE",
+		"Name_Vi": "Huế",
+		"Name_En": "",
+		"Name_Cn": "",
+		"Visible": true
+	},
+	{
+		"Code": "KEB",
+		"Name_Vi": "Kép",
+		"Name_En": "",
+		"Name_Cn": "",
+		"Visible": true
+	},
+	{
+		"Code": "KEC",
+		"Name_Vi": "Kép (cũ)",
+		"Name_En": "",
+		"Name_Cn": "",
+		"Visible": true
+	},
+	{
+		"Code": "KEP",
+		"Name_Vi": "Kép (cũ)",
+		"Name_En": "",
+		"Name_Cn": "",
+		"Visible": true
+	},
+	{
+		"Code": "KLI",
+		"Name_Vi": "Kim Liên",
+		"Name_En": "",
+		"Name_Cn": "",
+		"Visible": true
+	},
+	{
+		"Code": "KLU",
+		"Name_Vi": "Kim Lũ",
+		"Name_En": "",
+		"Name_Cn": "",
+		"Visible": true
+	},
+	{
+		"Code": "LAG",
+		"Name_Vi": "Lạc Giao",
+		"Name_En": "",
+		"Name_Cn": "",
+		"Visible": true
+	},
+	{
+		"Code": "LAK",
+		"Name_Vi": "La Khê",
+		"Name_En": "",
+		"Name_Cn": "",
+		"Visible": true
+	},
+	{
+		"Code": "LAN",
+		"Name_Vi": "Lạng",
+		"Name_En": "",
+		"Name_Cn": "",
+		"Visible": true
+	},
+	{
+		"Code": "LAS",
+		"Name_Vi": "Lạc Sơn",
+		"Name_En": "",
+		"Name_Cn": "",
+		"Visible": true
+	},
+	{
+		"Code": "LBI",
+		"Name_Vi": "Long Biên",
+		"Name_En": "",
+		"Name_Cn": "",
+		"Visible": true
+	},
+	{
+		"Code": "LCA",
+		"Name_Vi": "Lào Cai",
+		"Name_En": "",
+		"Name_Cn": "",
+		"Visible": true
+	},
+	{
+		"Code": "LCO",
+		"Name_Vi": "Lăng Cô",
+		"Name_En": "",
+		"Name_Cn": "",
+		"Visible": true
+	},
+	{
+		"Code": "LDA",
+		"Name_Vi": "Long Đại",
+		"Name_En": "",
+		"Name_Cn": "",
+		"Visible": true
+	},
+	{
+		"Code": "LDC",
+		"Name_Vi": "Long Đại (cũ)",
+		"Name_En": "",
+		"Name_Cn": "",
+		"Visible": true
+	},
+	{
+		"Code": "LES",
+		"Name_Vi": "Lệ Sơn",
+		"Name_En": "",
+		"Name_Cn": "",
+		"Visible": true
+	},
+	{
+		"Code": "LGA",
+		"Name_Vi": "Làng Giàng",
+		"Name_En": "",
+		"Name_Cn": "",
+		"Visible": true
+	},
+	{
+		"Code": "LGC",
+		"Name_Vi": "Lâm Giang (cũ)",
+		"Name_En": "",
+		"Name_Cn": "",
+		"Visible": true
+	},
+	{
+		"Code": "LGI",
+		"Name_Vi": "Lâm Giang",
+		"Name_En": "",
+		"Name_Cn": "",
+		"Visible": true
+	},
+	{
+		"Code": "LHA",
+		"Name_Vi": "La Hai",
+		"Name_En": "",
+		"Name_Cn": "",
+		"Visible": true
+	},
+	{
+		"Code": "LIM",
+		"Name_Vi": "Lim",
+		"Name_En": "",
+		"Name_Cn": "",
+		"Visible": true
+	},
+	{
+		"Code": "LKA",
+		"Name_Vi": "Lang Khay",
+		"Name_En": "",
+		"Name_Cn": "",
+		"Visible": true
+	},
+	{
+		"Code": "LKC",
+		"Name_Vi": "Lang Khang (cũ)",
+		"Name_En": "",
+		"Name_Cn": "",
+		"Visible": true
+	},
+	{
+		"Code": "LKH",
+		"Name_Vi": "Long Khánh",
+		"Name_En": "",
+		"Name_Cn": "",
+		"Visible": true
+	},
+	{
+		"Code": "LKY",
+		"Name_Vi": "Lệ Kỳ",
+		"Name_En": "",
+		"Name_Cn": "",
+		"Visible": true
+	},
+	{
+		"Code": "LMA",
+		"Name_Vi": "Lan Mẫu",
+		"Name_En": "",
+		"Name_Cn": "",
+		"Visible": true
+	},
+	{
+		"Code": "LMC",
+		"Name_Vi": "Lan Mẫu (cũ)",
+		"Name_En": "",
+		"Name_Cn": "",
+		"Visible": true
+	},
+	{
+		"Code": "LOC",
+		"Name_Vi": "Lệ Sơn (cũ)",
+		"Name_En": "",
+		"Name_Cn": "",
+		"Visible": true
+	},
+	{
+		"Code": "LSC",
+		"Name_Vi": "Lạng Sơn (cũ)",
+		"Name_En": "",
+		"Name_Cn": "",
+		"Visible": true
+	},
+	{
+		"Code": "LSD",
+		"Name_Vi": "Lạng Sơn",
+		"Name_En": "",
+		"Name_Cn": "",
+		"Visible": true
+	},
+	{
+		"Code": "LSO",
+		"Name_Vi": "Lạng Sơn (cũ)",
+		"Name_En": "",
+		"Name_Cn": "",
+		"Visible": true
+	},
+	{
+		"Code": "LTC",
+		"Name_Vi": "Lang Thíp (cũ)",
+		"Name_En": "",
+		"Name_Cn": "",
+		"Visible": true
+	},
+	{
+		"Code": "LTH",
+		"Name_Vi": "Lang Thíp",
+		"Name_En": "",
+		"Name_Cn": "",
+		"Visible": true
+	},
+	{
+		"Code": "LUS",
+		"Name_Vi": "Lương Sơn",
+		"Name_En": "",
+		"Name_Cn": "",
+		"Visible": true
+	},
+	{
+		"Code": "LXA",
+		"Name_Vi": "Lưu Xá",
+		"Name_En": "",
+		"Name_Cn": "",
+		"Visible": true
+	},
+	{
+		"Code": "MAA",
+		"Name_Vi": "Mậu A",
+		"Name_En": "",
+		"Name_Cn": "",
+		"Visible": true
+	},
+	{
+		"Code": "MAC",
+		"Name_Vi": "Mậu A (cũ)",
+		"Name_En": "",
+		"Name_Cn": "",
+		"Visible": true
+	},
+	{
+		"Code": "MAK",
+		"Name_Vi": "Mạo Khê",
+		"Name_En": "",
+		"Name_Cn": "",
+		"Visible": true
+	},
+	{
+		"Code": "MCA",
+		"Name_Vi": "Minh Cầm",
+		"Name_En": "",
+		"Name_Cn": "",
+		"Visible": true
+	},
+	{
+		"Code": "MCH",
+		"Name_Vi": "Mỹ Chánh",
+		"Name_En": "",
+		"Name_Cn": "",
+		"Visible": true
+	},
+	{
+		"Code": "MDC",
+		"Name_Vi": "Mỹ Đức (cũ)",
+		"Name_En": "",
+		"Name_Cn": "",
+		"Visible": true
+	},
+	{
+		"Code": "MDN",
+		"Name_Vi": "Mậu Đông (cũ)",
+		"Name_En": "",
+		"Name_Cn": "",
+		"Visible": true
+	},
+	{
+		"Code": "MDO",
+		"Name_Vi": "Mậu Đông",
+		"Name_En": "",
+		"Name_Cn": "",
+		"Visible": true
+	},
+	{
+		"Code": "MDU",
+		"Name_Vi": "Mỹ Đức",
+		"Name_En": "",
+		"Name_Cn": "",
+		"Visible": true
+	},
+	{
+		"Code": "MKC",
+		"Name_Vi": "Mạo Khê (cũ)",
+		"Name_En": "",
+		"Name_Cn": "",
+		"Visible": true
+	},
+	{
+		"Code": "MKH",
+		"Name_Vi": "Minh Khôi",
+		"Name_En": "",
+		"Name_Cn": "",
+		"Visible": true
+	},
+	{
+		"Code": "MLA",
+		"Name_Vi": "Ma Lâm",
+		"Name_En": "",
+		"Name_Cn": "",
+		"Visible": true
+	},
+	{
+		"Code": "MLC",
+		"Name_Vi": "Minh Lệ (cũ)",
+		"Name_En": "",
+		"Name_Cn": "",
+		"Visible": true
+	},
+	{
+		"Code": "MLE",
+		"Name_Vi": "Minh Lệ (cũ)",
+		"Name_En": "",
+		"Name_Cn": "",
+		"Visible": true
+	},
+	{
+		"Code": "MLM",
+		"Name_Vi": "Minh Lệ",
+		"Name_En": "",
+		"Name_Cn": "",
+		"Visible": true
+	},
+	{
+		"Code": "MMA",
+		"Name_Vi": "Bình Thuận",
+		"Name_En": "",
+		"Name_Cn": "",
+		"Visible": true
+	},
+	{
+		"Code": "MTC",
+		"Name_Vi": "Mỹ Trạch (cũ)",
+		"Name_En": "",
+		"Name_Cn": "",
+		"Visible": true
+	},
+	{
+		"Code": "MTR",
+		"Name_Vi": "Mỹ Trạch",
+		"Name_En": "",
+		"Name_Cn": "",
+		"Visible": true
+	},
+	{
+		"Code": "NBA",
+		"Name_Vi": "Ngã Ba",
+		"Name_En": "",
+		"Name_Cn": "",
+		"Visible": true
+	},
+	{
+		"Code": "NBI",
+		"Name_Vi": "Ninh Bình",
+		"Name_En": "",
+		"Name_Cn": "",
+		"Visible": true
+	},
+	{
+		"Code": "NDI",
+		"Name_Vi": "Nam Định",
+		"Name_En": "",
+		"Name_Cn": "",
+		"Visible": true
+	},
+	{
+		"Code": "NGO",
+		"Name_Vi": "Núi Gôi",
+		"Name_En": "",
+		"Name_Cn": "",
+		"Visible": true
+	},
+	{
+		"Code": "NHC",
+		"Name_Vi": "Ngòi Hóp (cũ)",
+		"Name_En": "",
+		"Name_Cn": "",
+		"Visible": true
+	},
+	{
+		"Code": "NHO",
+		"Name_Vi": "Ninh Hoà",
+		"Name_En": "",
+		"Name_Cn": "",
+		"Visible": true
+	},
+	{
+		"Code": "NHP",
+		"Name_Vi": "Ngòi Hóp",
+		"Name_En": "",
+		"Name_Cn": "",
+		"Visible": true
+	},
+	{
+		"Code": "NLA",
+		"Name_Vi": "Ngọc Lâm",
+		"Name_En": "",
+		"Name_Cn": "",
+		"Visible": true
+	},
+	{
+		"Code": "NLC",
+		"Name_Vi": "Ngọc Lâm (cũ)",
+		"Name_En": "",
+		"Name_Cn": "",
+		"Visible": true
+	},
+	{
+		"Code": "NSO",
+		"Name_Vi": "Ngân Sơn",
+		"Name_En": "",
+		"Name_Cn": "",
+		"Visible": true
+	},
+	{
+		"Code": "NTH",
+		"Name_Vi": "Núi Thành",
+		"Name_En": "",
+		"Name_Cn": "",
+		"Visible": true
+	},
+	{
+		"Code": "NTR",
+		"Name_Vi": "Nha Trang",
+		"Name_En": "",
+		"Name_Cn": "",
+		"Visible": true
+	},
+	{
+		"Code": "PCA",
+		"Name_Vi": "Phù Cát",
+		"Name_En": "",
+		"Name_Cn": "",
+		"Visible": true
+	},
+	{
+		"Code": "PCG",
+		"Name_Vi": "Phú Cang",
+		"Name_En": "",
+		"Name_Cn": "",
+		"Visible": true
+	},
+	{
+		"Code": "PDC",
+		"Name_Vi": "Phủ Đức (cũ)",
+		"Name_En": "",
+		"Name_Cn": "",
+		"Visible": true
+	},
+	{
+		"Code": "PDI",
+		"Name_Vi": "Phú Diễn",
+		"Name_En": "",
+		"Name_Cn": "",
+		"Visible": true
+	},
+	{
+		"Code": "PDU",
+		"Name_Vi": "Phủ Đức (cũ)",
+		"Name_En": "",
+		"Name_Cn": "",
+		"Visible": true
+	},
+	{
+		"Code": "PDV",
+		"Name_Vi": "Phủ Đức",
+		"Name_En": "",
+		"Name_Cn": "",
+		"Visible": true
+	},
+	{
+		"Code": "PHC",
+		"Name_Vi": "Phú Thọ (cũ)",
+		"Name_En": "",
+		"Name_Cn": "",
+		"Visible": true
+	},
+	{
+		"Code": "PHI",
+		"Name_Vi": "Phú Hiệp",
+		"Name_En": "",
+		"Name_Cn": "",
+		"Visible": true
+	},
+	{
+		"Code": "PHO",
+		"Name_Vi": "Phú Hòa",
+		"Name_En": "",
+		"Name_Cn": "",
+		"Visible": true
+	},
+	{
+		"Code": "PHR",
+		"Name_Vi": "Phò Trạch",
+		"Name_En": "",
+		"Name_Cn": "",
+		"Visible": true
+	},
+	{
+		"Code": "PHY",
+		"Name_Vi": "Phổ Yên",
+		"Name_En": "",
+		"Name_Cn": "",
+		"Visible": true
+	},
+	{
+		"Code": "PLA",
+		"Name_Vi": "Phước Lãnh",
+		"Name_En": "",
+		"Name_Cn": "",
+		"Visible": true
+	},
+	{
+		"Code": "PLU",
+		"Name_Vi": "Phố Lu",
+		"Name_En": "",
+		"Name_Cn": "",
+		"Visible": true
+	},
+	{
+		"Code": "PLY",
+		"Name_Vi": "Phủ Lý",
+		"Name_En": "",
+		"Name_Cn": "",
+		"Visible": true
+	},
+	{
+		"Code": "PTA",
+		"Name_Vi": "Phú Thái",
+		"Name_En": "",
+		"Name_Cn": "",
+		"Visible": true
+	},
+	{
+		"Code": "PTC",
+		"Name_Vi": "Phố Tráng (cũ)",
+		"Name_En": "",
+		"Name_Cn": "",
+		"Visible": true
+	},
+	{
+		"Code": "PTH",
+		"Name_Vi": "Phan Thiết",
+		"Name_En": "",
+		"Name_Cn": "",
+		"Visible": true
+	},
+	{
+		"Code": "PTO",
+		"Name_Vi": "Phú Thọ",
+		"Name_En": "",
+		"Name_Cn": "",
+		"Visible": true
+	},
+	{
+		"Code": "PTR",
+		"Name_Vi": "Phố Tráng",
+		"Name_En": "",
+		"Name_Cn": "",
+		"Visible": true
+	},
+	{
+		"Code": "PTU",
+		"Name_Vi": "Phúc Tự",
+		"Name_En": "",
+		"Name_Cn": "",
+		"Visible": true
+	},
+	{
+		"Code": "PUT",
+		"Name_Vi": "Phúc Trạch",
+		"Name_En": "",
+		"Name_Cn": "",
+		"Visible": true
+	},
+	{
+		"Code": "PVI",
+		"Name_Vi": "Phố Vị",
+		"Name_En": "",
+		"Name_Cn": "",
+		"Visible": true
+	},
+	{
+		"Code": "PYC",
+		"Name_Vi": "Phúc Yên (cũ)",
+		"Name_En": "",
+		"Name_Cn": "",
+		"Visible": true
+	},
+	{
+		"Code": "PYE",
+		"Name_Vi": "Phúc Yên",
+		"Name_En": "",
+		"Name_Cn": "",
+		"Visible": true
+	},
+	{
+		"Code": "QHA",
+		"Name_Vi": "Quán Hành",
+		"Name_En": "",
+		"Name_Cn": "",
+		"Visible": true
+	},
+	{
+		"Code": "QNG",
+		"Name_Vi": "Quảng Ngãi",
+		"Name_En": "",
+		"Name_Cn": "",
+		"Visible": true
+	},
+	{
+		"Code": "QNH",
+		"Name_Vi": "Quy Nhơn",
+		"Name_En": "",
+		"Name_Cn": "",
+		"Visible": true
+	},
+	{
+		"Code": "QTI",
+		"Name_Vi": "Quảng Trị",
+		"Name_En": "",
+		"Name_Cn": "",
+		"Visible": true
+	},
+	{
+		"Code": "QTR",
+		"Name_Vi": "Quán Triều",
+		"Name_En": "",
+		"Name_Cn": "",
+		"Visible": true
+	},
+	{
+		"Code": "SGO",
+		"Name_Vi": "Sài Gòn",
+		"Name_En": "",
+		"Name_Cn": "",
+		"Visible": true
+	},
+	{
+		"Code": "SHO",
+		"Name_Vi": "Sen Hồ",
+		"Name_En": "",
+		"Name_Cn": "",
+		"Visible": true
+	},
+	{
+		"Code": "SKI",
+		"Name_Vi": "Suối Kiết",
+		"Name_En": "",
+		"Name_Cn": "",
+		"Visible": true
+	},
+	{
+		"Code": "SLU",
+		"Name_Vi": "Sa Lung",
+		"Name_En": "",
+		"Name_Cn": "",
+		"Visible": true
+	},
+	{
+		"Code": "SMA",
+		"Name_Vi": "Sông Mao",
+		"Name_En": "",
+		"Name_Cn": "",
+		"Visible": true
+	},
+	{
+		"Code": "SOH",
+		"Name_Vi": "Sông Hóa",
+		"Name_En": "",
+		"Name_Cn": "",
+		"Visible": true
+	},
+	{
+		"Code": "SON",
+		"Name_Vi": "Bảo Sơn",
+		"Name_En": "",
+		"Name_Cn": "",
+		"Visible": true
+	},
+	{
+		"Code": "STH",
+		"Name_Vi": "Sóng Thần",
+		"Name_En": "",
+		"Name_Cn": "",
+		"Visible": true
+	},
+	{
+		"Code": "TAC",
+		"Name_Vi": "Tân Ấp (cũ)",
+		"Name_En": "",
+		"Name_Cn": "",
+		"Visible": true
+	},
+	{
+		"Code": "TAN",
+		"Name_Vi": "Tiên An",
+		"Name_En": "",
+		"Name_Cn": "",
+		"Visible": true
+	},
+	{
+		"Code": "TAP",
+		"Name_Vi": "Tân Ấp",
+		"Name_En": "",
+		"Name_Cn": "",
+		"Visible": true
+	},
+	{
+		"Code": "TCA",
+		"Name_Vi": "Thị Cầu",
+		"Name_En": "",
+		"Name_Cn": "",
+		"Visible": true
+	},
+	{
+		"Code": "TCC",
+		"Name_Vi": "Thị Cầu (cũ)",
+		"Name_En": "",
+		"Name_Cn": "",
+		"Visible": true
+	},
+	{
+		"Code": "TCH",
+		"Name_Vi": "Tháp Chàm",
+		"Name_En": "",
+		"Name_Cn": "",
+		"Visible": true
+	},
+	{
+		"Code": "TGI",
+		"Name_Vi": "Trung Giã",
+		"Name_En": "",
+		"Name_Cn": "",
+		"Visible": true
+	},
+	{
+		"Code": "THA",
+		"Name_Vi": "Tuy Hoà",
+		"Name_En": "",
+		"Name_Cn": "",
+		"Visible": true
+	},
+	{
+		"Code": "THC",
+		"Name_Vi": "Trái Hút (cũ)",
+		"Name_En": "",
+		"Name_Cn": "",
+		"Visible": true
+	},
+	{
+		"Code": "THL",
+		"Name_Vi": "Thượng Lý",
+		"Name_En": "",
+		"Name_Cn": "",
+		"Visible": true
+	},
+	{
+		"Code": "THO",
+		"Name_Vi": "Thanh Hoá",
+		"Name_En": "",
+		"Name_Cn": "",
+		"Visible": true
+	},
+	{
+		"Code": "THU",
+		"Name_Vi": "Trái Hút",
+		"Name_En": "",
+		"Name_Cn": "",
+		"Visible": true
+	},
+	{
+		"Code": "TKC",
+		"Name_Vi": "Tiên Kiên (cũ)",
+		"Name_En": "",
+		"Name_Cn": "",
+		"Visible": true
+	},
+	{
+		"Code": "TKE",
+		"Name_Vi": "Tiên Kiên",
+		"Name_En": "",
+		"Name_Cn": "",
+		"Visible": true
+	},
+	{
+		"Code": "TKI",
+		"Name_Vi": "Trà Kiệu",
+		"Name_En": "",
+		"Name_Cn": "",
+		"Visible": true
+	},
+	{
+		"Code": "TKY",
+		"Name_Vi": "Tam Kỳ",
+		"Name_En": "",
+		"Name_Cn": "",
+		"Visible": true
+	},
+	{
+		"Code": "TLA",
+		"Name_Vi": "Thượng Lâm",
+		"Name_En": "",
+		"Name_Cn": "",
+		"Visible": true
+	},
+	{
+		"Code": "TLC",
+		"Name_Vi": "Thọ Lộc",
+		"Name_En": "",
+		"Name_Cn": "",
+		"Visible": true
+	},
+	{
+		"Code": "TLI",
+		"Name_Vi": "Thạch Lỗi",
+		"Name_En": "",
+		"Name_Cn": "",
+		"Visible": true
+	},
+	{
+		"Code": "TLO",
+		"Name_Vi": "Thị Long",
+		"Name_En": "",
+		"Name_Cn": "",
+		"Visible": true
+	},
+	{
+		"Code": "TLU",
+		"Name_Vi": "Thanh Luyện",
+		"Name_En": "",
+		"Name_Cn": "",
+		"Visible": true
+	},
+	{
+		"Code": "TMA",
+		"Name_Vi": "Trại Mát",
+		"Name_En": "",
+		"Name_Cn": "",
+		"Visible": true
+	},
+	{
+		"Code": "TNG",
+		"Name_Vi": "Thái Nguyên",
+		"Name_En": "",
+		"Name_Cn": "",
+		"Visible": true
+	},
+	{
+		"Code": "TNI",
+		"Name_Vi": "Thái Niên",
+		"Name_En": "",
+		"Name_Cn": "",
+		"Visible": true
+	},
+	{
+		"Code": "TQU",
+		"Name_Vi": "Tam Quan",
+		"Name_En": "",
+		"Name_Cn": "",
+		"Visible": true
+	},
+	{
+		"Code": "TSN",
+		"Name_Vi": "Từ Sơn (cũ)",
+		"Name_En": "",
+		"Name_Cn": "",
+		"Visible": true
+	},
+	{
+		"Code": "TSO",
+		"Name_Vi": "Từ Sơn",
+		"Name_En": "",
+		"Name_Cn": "",
+		"Visible": true
+	},
+	{
+		"Code": "UBC",
+		"Name_Vi": "Uông Bí (cũ)",
+		"Name_En": "",
+		"Name_Cn": "",
+		"Visible": true
+	},
+	{
+		"Code": "UBI",
+		"Name_Vi": "Uông Bí",
+		"Name_En": "",
+		"Name_Cn": "",
+		"Visible": true
+	},
+	{
+		"Code": "VCA",
+		"Name_Vi": "Vân Canh",
+		"Name_En": "",
+		"Name_Cn": "",
+		"Visible": true
+	},
+	{
+		"Code": "VDI",
+		"Name_Vi": "Văn Điển",
+		"Name_En": "",
+		"Name_Cn": "",
+		"Visible": true
+	},
+	{
+		"Code": "VEC",
+		"Name_Vi": "Vũ Ẻn (cũ)",
+		"Name_En": "",
+		"Name_Cn": "",
+		"Visible": true
+	},
+	{
+		"Code": "VEN",
+		"Name_Vi": "Vũ Ẻn",
+		"Name_En": "",
+		"Name_Cn": "",
+		"Visible": true
+	},
+	{
+		"Code": "VIN",
+		"Name_Vi": "Vinh",
+		"Name_En": "",
+		"Name_Cn": "",
+		"Visible": true
+	},
+	{
+		"Code": "VPC",
+		"Name_Vi": "Văn Phú (cũ)",
+		"Name_En": "",
+		"Name_Cn": "",
+		"Visible": true
+	},
+	{
+		"Code": "VPH",
+		"Name_Vi": "Văn Phú (cũ)",
+		"Name_En": "",
+		"Name_Cn": "",
+		"Visible": true
+	},
+	{
+		"Code": "VPY",
+		"Name_Vi": "Văn Phú",
+		"Name_En": "",
+		"Name_Cn": "",
+		"Visible": true
+	},
+	{
+		"Code": "VRC",
+		"Name_Vi": "VIệt Trì (cũ)",
+		"Name_En": "",
+		"Name_Cn": "",
+		"Visible": true
+	},
+	{
+		"Code": "VTH",
+		"Name_Vi": "Vĩnh Thủy",
+		"Name_En": "",
+		"Name_Cn": "",
+		"Visible": true
+	},
+	{
+		"Code": "VTR",
+		"Name_Vi": "Việt Trì",
+		"Name_En": "",
+		"Name_Cn": "",
+		"Visible": true
+	},
+	{
+		"Code": "VXA",
+		"Name_Vi": "Văn Xá",
+		"Name_En": "",
+		"Name_Cn": "",
+		"Visible": true
+	},
+	{
+		"Code": "VXO",
+		"Name_Vi": "Voi Xô",
+		"Name_En": "",
+		"Name_Cn": "",
+		"Visible": true
+	},
+	{
+		"Code": "VYC",
+		"Name_Vi": "Vĩnh Yên (cũ)",
+		"Name_En": "",
+		"Name_Cn": "",
+		"Visible": true
+	},
+	{
+		"Code": "VYE",
+		"Name_Vi": "Vĩnh Yên",
+		"Name_En": "",
+		"Name_Cn": "",
+		"Visible": true
+	},
+	{
+		"Code": "YBA",
+		"Name_Vi": "Yên Bái",
+		"Name_En": "",
+		"Name_Cn": "",
+		"Visible": true
+	},
+	{
+		"Code": "YBC",
+		"Name_Vi": "Yên Bái (cũ)",
+		"Name_En": "",
+		"Name_Cn": "",
+		"Visible": true
+	},
+	{
+		"Code": "YCU",
+		"Name_Vi": "Yên Cư",
+		"Name_En": "",
+		"Name_Cn": "",
+		"Visible": true
+	},
+	{
+		"Code": "YDC",
+		"Name_Vi": "Yên Dưỡng (cũ)",
+		"Name_En": "",
+		"Name_Cn": "",
+		"Visible": true
+	},
+	{
+		"Code": "YDU",
+		"Name_Vi": "Yên Duệ",
+		"Name_En": "",
+		"Name_Cn": "",
+		"Visible": true
+	},
+	{
+		"Code": "YED",
+		"Name_Vi": "Yên Dưỡng",
+		"Name_En": "",
+		"Name_Cn": "",
+		"Visible": true
+	},
+	{
+		"Code": "YET",
+		"Name_Vi": "Yên Trạch",
+		"Name_En": "",
+		"Name_Cn": "",
+		"Visible": true
+	},
+	{
+		"Code": "YLY",
+		"Name_Vi": "Yên Lý",
+		"Name_En": "",
+		"Name_Cn": "",
+		"Visible": true
+	},
+	{
+		"Code": "YTH",
+		"Name_Vi": "Yên Thái",
+		"Name_En": "",
+		"Name_Cn": "",
+		"Visible": true
+	},
+	{
+		"Code": "YTR",
+		"Name_Vi": "Yên Trung",
+		"Name_En": "",
+		"Name_Cn": "",
+		"Visible": true
+	},
+	{
+		"Code": "YVI",
+		"Name_Vi": "Yên Viên",
+		"Name_En": "",
+		"Name_Cn": "",
+		"Visible": true
+	},
+	{
+		"Code": "YXU",
+		"Name_Vi": "Yên Xuân",
+		"Name_En": "",
+		"Name_Cn": "",
+		"Visible": true
+	}
+]

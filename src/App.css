@@ -1,0 +1,21 @@
+#root {
+  /* max-width: 1280px; */
+  margin: 0 auto;
+  /* padding: 2rem; */
+  text-align: center;
+}
+
+.custom-segmented {
+  border-radius: 30px !important;
+  overflow: hidden;
+  padding: 5px !important;
+}
+
+.custom-segmented .ant-segmented-item {
+  border-radius: 30px !important;
+}
+
+.custom-segmented .ant-segmented-item .ant-segmented-item-label {
+  font-size: 16px !important;
+  padding: 5px 30px !important;
+}

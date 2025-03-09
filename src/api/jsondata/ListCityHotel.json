@@ -1,0 +1,134 @@
+﻿[
+  {
+    "CityCode": "BMV",
+    "CityName": "Ban Mê Thuột",
+    "CountryCode": "VN",
+    "CountryName": "Việt Nam"
+  },
+  {
+    "CityCode": "CAH",
+    "CityName": "Cà Mau",
+    "CountryCode": "VN",
+    "CountryName": "Việt Nam"
+  },
+  {
+    "CityCode": "DAD",
+    "CityName": "Đà Nẵng",
+    "CountryCode": "VN",
+    "CountryName": "Việt Nam"
+  },
+  {
+    "CityCode": "DIN",
+    "CityName": "Điện Biên Phủ",
+    "CountryCode": "VN",
+    "CountryName": "Việt Nam"
+  },
+  {
+    "CityCode": "DLI",
+    "CityName": "Đà Lạt",
+    "CountryCode": "VN",
+    "CountryName": "Việt Nam"
+  },
+  {
+    "CityCode": "HAN",
+    "CityName": "Hà Nội",
+    "CountryCode": "VN",
+    "CountryName": "Việt Nam"
+  },
+  {
+    "CityCode": "HPH",
+    "CityName": "Hải Phòng",
+    "CountryCode": "VN",
+    "CountryName": "Việt Nam"
+  },
+  {
+    "CityCode": "HUI",
+    "CityName": "Huế",
+    "CountryCode": "VN",
+    "CountryName": "Việt Nam"
+  },
+  {
+    "CityCode": "NHA",
+    "CityName": "Nha Trang",
+    "CountryCode": "VN",
+    "CountryName": "Việt Nam"
+  },
+  {
+    "CityCode": "PQC",
+    "CityName": "Phú Quốc",
+    "CountryCode": "VN",
+    "CountryName": "Việt Nam"
+  },
+  {
+    "CityCode": "PXU",
+    "CityName": "PleiKu",
+    "CountryCode": "VN",
+    "CountryName": "Việt Nam"
+  },
+  {
+    "CityCode": "SGN",
+    "CityName": "Hồ Chí Minh",
+    "CountryCode": "VN",
+    "CountryName": "Việt Nam"
+  },
+  {
+    "CityCode": "TBB",
+    "CityName": "Phú Yên",
+    "CountryCode": "VN",
+    "CountryName": "Việt Nam"
+  },
+  {
+    "CityCode": "THD",
+    "CityName": "Thanh Hóa",
+    "CountryCode": "VN",
+    "CountryName": "Việt Nam"
+  },
+  {
+    "CityCode": "UIH",
+    "CityName": "Qui Nhơn",
+    "CountryCode": "VN",
+    "CountryName": "Việt Nam"
+  },
+  {
+    "CityCode": "VCA",
+    "CityName": "Cần Thơ",
+    "CountryCode": "VN",
+    "CountryName": "Việt Nam"
+  },
+  {
+    "CityCode": "VCL",
+    "CityName": "Quảng Nam",
+    "CountryCode": "VN",
+    "CountryName": "Việt Nam"
+  },
+  {
+    "CityCode": "VCS",
+    "CityName": "Côn Đảo",
+    "CountryCode": "VN",
+    "CountryName": "Việt Nam"
+  },
+  {
+    "CityCode": "VDH",
+    "CityName": "Quảng Bình",
+    "CountryCode": "VN",
+    "CountryName": "Việt Nam"
+  },
+  {
+    "CityCode": "VDO",
+    "CityName": "Quảng Ninh",
+    "CountryCode": "VN",
+    "CountryName": "Việt Nam"
+  },
+  {
+    "CityCode": "VII",
+    "CityName": "Vinh",
+    "CountryCode": "VN",
+    "CountryName": "Việt Nam"
+  },
+  {
+    "CityCode": "VKG",
+    "CityName": "Kiên Giang",
+    "CountryCode": "VN",
+    "CountryName": "Việt Nam"
+  }
+]
