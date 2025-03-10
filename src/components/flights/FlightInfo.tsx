@@ -1,5 +1,6 @@
 import React from 'react'
 import {useFlightContext } from './Flight'
+import { formatISODate } from '../../utils/master';
 
 
 const FlightInfo = () => {
@@ -13,8 +14,9 @@ const FlightInfo = () => {
         </div>
         <div className="flex items-center justify-center gap-10">
             <div className="flex flex-col">
-            <p className="font-bold text-xl">05:30</p>
-            <p className="text-gray-400 font-semibold">{item.StartPoint}</p></div>
+                <p className="font-bold text-xl">{formatISODate(item.StartDate,{outputFormat: 'time' })}</p>
+                <p className="text-gray-400 font-semibold">{item.StartPoint}</p>
+            </div>
             <div className="flex flex-col">
                 <p className="text-gray-400">2h : 10m</p>
                 <div className="flex items-center">
@@ -25,7 +27,7 @@ const FlightInfo = () => {
                 <p className="text-gray-400">{item.FlightNumber}</p>
             </div>
             <div className="flex flex-col">
-                <p className="font-bold text-xl">10:30</p>
+                <p className="font-bold text-xl">{formatISODate(item.StartDate,{outputFormat: 'time' })}</p>
                 <p className="text-gray-400 font-semibold">{item.EndPoint}</p>
             </div>
         </div>

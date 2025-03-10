@@ -55,7 +55,7 @@ export const fetchDataFlight = createAsyncThunk(
                 }
             })
 
-            return false ; 
+            return true ; 
 
         }catch(error){
             return rejectWithValue(axios.isAxiosError(error) && error.message || "Failed to fetch flights") ; 

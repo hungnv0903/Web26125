@@ -10,6 +10,7 @@ import { fetchDataFlight } from '../../redux/searchFlightsSlice';
 import { ISearchData, ISearchFlight } from '../../types/searchModel';
 import { useLocation } from 'react-router-dom';
 import { handleSearchForm } from '../../redux/searchFormSlice';
+import './index.scss' ; 
 
 
 const FlightPage = () => {
@@ -60,10 +61,8 @@ const FlightPage = () => {
           </div>
         </div>
         <div className='col-right col-span-12 lg:col-span-8 rounded-md ps-3 '>
-          <div>
             <HeaderFlight></HeaderFlight>
             <ListFlight></ListFlight>
-          </div>
         </div>
       </div>
     </Fragment>

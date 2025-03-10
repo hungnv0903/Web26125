@@ -27,17 +27,18 @@ const Flight = ({flightInfo}:FlightContextProp) => {
   }
   return (
     <FlightContext.Provider value={valueContext}>
-        <div className='relative overflow-hidden shadow-md hover:shadow-blue-300 rounded-2xl p-3 transition-all duration-500 ease-in-out '>
+        <div className='card-flight cursor-pointer relative overflow-hidden rounded-2xl p-3 transition-all duration-500 ease-in-out '>
             <FlightInfo></FlightInfo>
             <div className='flex justify-between items-center border-t border-t-gray-300 mt-3 pt-3'>
                 <div className='flex items-center gap-5'>
-                    <div>
-                    <Button color="danger" variant="filled" shape='round'>
+                    {/* <div className='font-semibold text-gray-400'>Flight Details</div>   */}
+                    <Button color="primary" variant="filled" shape='round'>
+                       Flight Details
+                    </Button>
+                    <Button color="danger" variant="text" shape='round'>
                         <span className='font-bold'>{flightInfo.TicketOrtherNumber}</span> 
                         <span className=''>Other Fare Categories</span>  
                     </Button>
-                    </div>
-                    <div className='font-semibold text-gray-400'>Flight Details</div>  
                 </div>
                 <div className='flex items-center gap-4'>
                     <div className='text-lg flex items-center'> 
