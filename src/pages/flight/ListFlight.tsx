@@ -24,9 +24,8 @@ const groupFlights = (dataAllFlight: IListFareData[]) => {
 };
 
 const ListFlight = () => {
-  const searchFlightState = useSelector((state:RootState)=>state.searchFlightReducer.allFlight) ;
-  // console.log(searchFlightState) ; 
-  const groupListFlightData = groupFlights(searchFlightState) ; 
+  const allFlight = useSelector((state:RootState)=>state.searchFlightReducer.allFlight) ;
+  const groupListFlightData = groupFlights(allFlight) ; 
   const mainListFlight = Array.from(groupListFlightData).map(([key,value])=>({...value[0],keyFlight:key,TicketOrtherNumber:value.length-1}))
   const listFlightRoute = mainListFlight.filter(flight=>flight.ListOption[0].ListFlight[0].Leg===0) ; 
   console.log(listFlightRoute) ;  

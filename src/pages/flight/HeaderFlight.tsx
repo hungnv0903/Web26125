@@ -1,10 +1,15 @@
 import { SearchOutlined } from '@ant-design/icons'
 import { Button, Progress, Select } from 'antd'
 import React, { Fragment } from 'react'
+import { useSelector } from 'react-redux'
+import { RootState } from '../../redux/store'
 
 
 const HeaderFlight = () => {
+    const progress = useSelector((state:RootState)=>state.searchFlightReducer.progress) ;  
+    const isLoading = useSelector((state:RootState)=>state.searchFlightReducer.isLoading) ;
     
+    console.log(progress , isLoading) ; 
   return (
     <Fragment>
         <div className='shadow-md flex justify-between items-center rounded-2xl p-3'>
