@@ -11,6 +11,7 @@ export interface IListSegment {
     "Duration": number;
     "Class": string;
     "FareBasis": string;
+    "FareType":string;
     "Cabin": string;
     "CabinName": string;
     "SeatAvl": number ; 

@@ -50,3 +50,18 @@ export const formatISODate = (dateStr: string, options: FormatDateOptions = {}):
   return parsedDate.format(formats[outputFormat] || formats['date']);
   
 };
+
+export function minutesToHours(minutes:number) {
+  if (typeof minutes !== 'number' || minutes < 0) {
+      return `0h : 0m` ; 
+  }
+  return `${Math.floor(minutes/60)}h : ${minutes%60}m` ; 
+}
+
+export function formatFlightNumber(flightNumber:string){
+    const arrayFlightNumber = flightNumber.split(',') ; 
+    if(arrayFlightNumber.length > 1){
+      return `${arrayFlightNumber[0]}...` ; 
+    }
+    return arrayFlightNumber[0] ; 
+}
