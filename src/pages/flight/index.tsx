@@ -51,8 +51,8 @@ const FlightPage = () => {
 
   return (
     <Fragment>
-      <div className='grid grid-cols-12 gap-3 p-5 w-full xl:w-3/4 mx-auto transition-all duration-500 ease-in-out'>
-        <div className='col-left hidden lg:block col-span-4 cursor-pointer'>
+      <div className='grid grid-cols-6 gap-3 px-2 md:p-5 w-full xl:w-3/4 mx-auto transition-all duration-500 ease-in-out'>
+        <div className='col-left hidden lg:block col-span-2 cursor-pointer'>
           <div className='shadow-sm rounded-lg '>
             <YourFlights></YourFlights>
           </div>
@@ -60,7 +60,7 @@ const FlightPage = () => {
             <Filter></Filter>
           </div>
         </div>
-        <div className='col-right col-span-12 lg:col-span-8 rounded-md ps-3 '>
+        <div className='col-right col-span-6 lg:col-span-4 rounded-md md:ps-3 '>
             <HeaderFlight></HeaderFlight>
             <ListFlight></ListFlight>
         </div>

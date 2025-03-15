@@ -27,31 +27,30 @@ const Flight = ({flightInfo}:FlightContextProp) => {
   }
   return (
     <FlightContext.Provider value={valueContext}>
-        <div className='card-flight cursor-pointer relative overflow-hidden rounded-2xl p-3 transition-all duration-500 ease-in-out '>
+        <div className='card-flight cursor-pointer rounded-2xl p-3 transition-all duration-500 ease-in-out '>
             <FlightInfo></FlightInfo>
-            <div className='flex justify-between items-center border-t border-t-gray-300 mt-3 pt-3'>
-                <div className='flex items-center gap-5'>
+            <div className='flex justify-end md:justify-between items-center border-t border-t-gray-300 mt-3 pt-3'>
+                <div className='hidden md:flex items-center gap-5'>
                     {/* <div className='font-semibold text-gray-400'>Flight Details</div>   */}
-                    <Button color="primary" variant="filled" shape='round'>
+                    <Button color="primary" variant="text" shape='round'>
                        Flight Details
                     </Button>
-                    <Button color="danger" variant="text" shape='round'>
+                    { flightInfo.TicketOrtherNumber > 0 && (
+                      <Button color="primary" variant="text" shape='round'>
                         <span className='font-bold'>{flightInfo.TicketOrtherNumber}</span> 
                         <span className=''>Other Fare Categories</span>  
-                    </Button>
+                      </Button>
+                    )}
                 </div>
                 <div className='flex items-center gap-4'>
                     <div className='text-lg flex items-center'> 
                     <h3 className='font-bold text-orange-400'>{flightInfo.PriceAdt.toLocaleString('vi-VN')}</h3>
                     <h3 className='ms-2 font-bold text-blue-400'>{flightInfo.Currency}</h3>
                     </div>
-                    <Button className='w-30' type="primary" size='large' variant="filled" shape='round' >
+                    <Button className='w-24' type="primary" size='middle' variant="filled" shape='round' >
                     Choose
                     </Button>
                 </div>
-            </div>
-            <div className='absolute top-[10px] right-[-80px] bg-pink-600 w-50 text-white font-semibold rotate-45'>
-                Eco
             </div>
         </div>
     </FlightContext.Provider>

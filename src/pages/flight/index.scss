@@ -1,6 +1,12 @@
 .card-flight {
     box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.3) ; 
     &:hover{
-        box-shadow: 0px 0px 10px rgba(2, 116, 255, 0.5) ;  ; 
+        box-shadow: 0px 0px 10px rgba(11, 11, 11, 0.5) ;  ; 
     }
+}
+
+.text-ticket-type{
+    font-family: math;
+    color: rgb(249, 0, 116);
+    font-style: italic;
 }
