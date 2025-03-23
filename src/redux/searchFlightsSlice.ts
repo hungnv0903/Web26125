@@ -27,6 +27,7 @@ export const fetchDataFlight = createAsyncThunk(
     async (searchData:ISearchData, {dispatch, rejectWithValue })=>{
         const {flightSearch,systems} = searchData ; 
         try {
+            let isLoading = true ; 
             const updateResult = (newResult:IResponseAllFlight)=>{
                 dispatch(handleUpdateFlight(newResult)) ; 
             }
@@ -37,7 +38,7 @@ export const fetchDataFlight = createAsyncThunk(
             }
 
             let completeRequest = 0 ; 
-            systems.forEach(async(system)=>{
+            const arrPromise = systems.map(async (system)=>{
                 const postFlightData:IPostFlightData = {...flightSearch,System:system} ; 
                 try {
                     const result = await getFlightsApi.search(postFlightData) ; 
@@ -53,10 +54,13 @@ export const fetchDataFlight = createAsyncThunk(
                     completeRequest++ ; 
                     updateProgress(completeRequest) ; 
                 }
+
             })
-
-            return true ; 
-
+            await Promise.all(arrPromise)
+                .finally(()=>{
+                    isLoading =  false ; 
+                }) 
+            return isLoading ; 
         }catch(error){
             return rejectWithValue(axios.isAxiosError(error) && error.message || "Failed to fetch flights") ; 
         }

@@ -105,3 +105,11 @@ export interface IResponseAllFlight {
     "Message": string;
     "TotalSeconds": number;
 }
+
+export interface IListSelectFlight {
+    Status:boolean ; 
+    ListFlight: IListFareData[] ; 
+    NumberChoose:number ; 
+    Journey:number | null ; 
+    Matching:boolean ; 
+}

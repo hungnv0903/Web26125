@@ -1,7 +1,10 @@
 import { Button } from 'antd'
 import React, { createContext, useContext } from 'react'
-import { IListFareData } from '../../types/flightModel'
+import { IListFareData} from '../../types/flightModel'
 import FlightInfo from './FlightInfo';
+import { useDispatch} from 'react-redux';
+import { AppDispatch} from '../../redux/store';
+import { handleChooseFlight } from '../../redux/chooseFlightSlice';
 
 interface FlightInfoProp extends IListFareData {
     TicketOrtherNumber: number ;
@@ -22,9 +25,11 @@ export const useFlightContext = () => {
   };
 
 const Flight = ({flightInfo}:FlightContextProp) => {
+  const dispatch = useDispatch<AppDispatch>() ; 
   const valueContext:FlightContextProp = {
     flightInfo:flightInfo,
   }
+
   return (
     <FlightContext.Provider value={valueContext}>
         <div className='card-flight cursor-pointer rounded-2xl p-3 transition-all duration-500 ease-in-out '>
@@ -47,8 +52,8 @@ const Flight = ({flightInfo}:FlightContextProp) => {
                     <h3 className='font-bold text-orange-400'>{flightInfo.PriceAdt.toLocaleString('vi-VN')}</h3>
                     <h3 className='ms-2 font-bold text-blue-400'>{flightInfo.Currency}</h3>
                     </div>
-                    <Button className='w-24' type="primary" size='middle' variant="filled" shape='round' >
-                    Choose
+                    <Button onClick={()=>dispatch(handleChooseFlight(flightInfo))} className='w-24' type="primary" size='middle' variant="filled" shape='round' >
+                      Choose
                     </Button>
                 </div>
             </div>

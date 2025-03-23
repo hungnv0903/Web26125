@@ -11,6 +11,7 @@ import { ISearchData, ISearchFlight } from '../../types/searchModel';
 import { useLocation } from 'react-router-dom';
 import { handleSearchForm } from '../../redux/searchFormSlice';
 import './index.scss' ; 
+import { handleNumberChoose } from '../../redux/chooseFlightSlice';
 
 
 const FlightPage = () => {
@@ -31,6 +32,7 @@ const FlightPage = () => {
       Adt:passenger[0],
       Chd:passenger[1],
       Inf:passenger[2],
+      Domestic:checkDomesticFlight,
       ListFlight: departDate? departDate.map((item,index)=>{
           return {
               Leg:index,
@@ -40,24 +42,29 @@ const FlightPage = () => {
           }
       }):null,
     } 
+
     const searchData:ISearchData = {
       flightSearch:flightSearch,
       systems:systems,
     }
-
-    dispatch(handleSearchForm(flightSearch)) ; 
+    
+    dispatch(handleSearchForm(flightSearch)) ;
+    dispatch(handleNumberChoose(departDate.length)) ;  
     dispatch(fetchDataFlight(searchData))
+
   }
 
   return (
     <Fragment>
       <div className='grid grid-cols-6 gap-3 px-2 md:p-5 w-full xl:w-3/4 mx-auto transition-all duration-500 ease-in-out'>
         <div className='col-left hidden lg:block col-span-2 cursor-pointer'>
-          <div className='shadow-sm rounded-lg '>
-            <YourFlights></YourFlights>
-          </div>
-          <div>
-            <Filter></Filter>
+          <div className='sticky top-0'>
+            <div className='shadow-sm rounded-lg '>
+              <YourFlights></YourFlights>
+            </div>
+            <div>
+              <Filter></Filter>
+            </div>
           </div>
         </div>
         <div className='col-right col-span-6 lg:col-span-4 rounded-md md:ps-3 '>

@@ -25,6 +25,7 @@ export interface ISearchFlight {
     "Adt":number ; 
     "Chd":number ;
     "Inf":number ; 
+    "Domestic":boolean ; 
     "ListFlight": IListFlightSearch[] | null ; 
 }
 

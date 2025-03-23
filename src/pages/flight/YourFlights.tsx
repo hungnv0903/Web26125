@@ -10,7 +10,7 @@ const YourFlights = () => {
             <h3 className='text-lg font-semibold text-start capitalize'>Your flight</h3>
         </div>
         <SelectFlight></SelectFlight>
-       <FareDetails></FareDetails>
+        <FareDetails></FareDetails>
     </>
   )
 }
