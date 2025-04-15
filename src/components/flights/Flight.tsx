@@ -5,6 +5,7 @@ import FlightInfo from './FlightInfo';
 import { useDispatch} from 'react-redux';
 import { AppDispatch} from '../../redux/store';
 import { handleChooseFlight } from '../../redux/chooseFlightSlice';
+import { handleFlightDetail } from '../../redux/flightDetailSlide';
 
 interface FlightInfoProp extends IListFareData {
     TicketOrtherNumber: number ;
@@ -36,8 +37,7 @@ const Flight = ({flightInfo}:FlightContextProp) => {
             <FlightInfo></FlightInfo>
             <div className='flex justify-end md:justify-between items-center border-t border-t-gray-300 mt-3 pt-3'>
                 <div className='hidden md:flex items-center gap-5'>
-                    {/* <div className='font-semibold text-gray-400'>Flight Details</div>   */}
-                    <Button color="primary" variant="text" shape='round'>
+                    <Button onClick={()=>dispatch(handleFlightDetail(flightInfo))} color="primary" variant="text" shape='round'>
                        Flight Details
                     </Button>
                     { flightInfo.TicketOrtherNumber > 0 && (

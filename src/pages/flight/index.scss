@@ -15,3 +15,42 @@
     font-family: 'Times New Roman', Times, serif;
 }
 
+.text-fare-type {
+    font-size: 13px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    width: 100px;
+}
+
+.time-filter:hover {
+    background-color: rgb(245 245 245) ;
+    transition: 0.4s;
+}
+
+.active-time-filter {
+    background-color: #1677FF !important;
+}
+
+.active-time-filter div {
+    color: white !important;
+}
+
+.price-airline-filter {
+    font-size: 13px;
+}
+
+.collapse-filter {
+        .ant-collapse {
+            background-color:white;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+
+            .ant-collapse-item {
+                .ant-collapse-header {
+                    background-color: #FAFAFA;
+                }
+            }
+        }
+}
