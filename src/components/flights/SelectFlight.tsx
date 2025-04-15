@@ -2,27 +2,39 @@ import { Button, Collapse } from 'antd'
 import React, { Fragment } from 'react'
 import { useDispatch, useSelector } from 'react-redux';
 import { AppDispatch, RootState } from '../../redux/store';
-import { AirportInfo, formatDate } from '../../utils/master';
+import { AirportInfo} from '../../utils/helper';
 import FlightTime from './FlightTime';
 import { handleChangeFlight } from '../../redux/chooseFlightSlice';
+import { handleFlightDetail } from '../../redux/flightDetailSlide';
+import { formatDate } from '../../utils/format';
 
 const SelectFlight = () => {
     const dispatch = useDispatch<AppDispatch>() ; 
     const listFlightInfo = useSelector((state:RootState)=>state.searchFormReducer.ListFlight) ; 
-    const listSelectFlight = useSelector((state:RootState)=>state.chooseFlightReducer.ListFlight); 
-    console.log(listFlightInfo) ;
-    const newListSelectFlight = listSelectFlight.flatMap(item=>item.ListOption[0].ListFlight) ; 
-    console.log("ListSelectFlight" , newListSelectFlight) ; 
+    const {ListFlight,Matching} = useSelector((state:RootState)=>state.chooseFlightReducer); 
+    const newListSelectFlight = ListFlight.flatMap(item=>item.ListOption[0].ListFlight) ; 
+   
     
     const findFlightItem = (leg:number)=>{
        const flightItem =  newListSelectFlight.find(item=>item.Leg===leg) ;
        return flightItem ;  
     } 
      
+    const showFlightDetail = (Leg:number)=>{
+        if(Matching){
+            console.log(ListFlight[0]) ; 
+            dispatch(handleFlightDetail(ListFlight[0])) ;
+             
+        }else{
+            const Flight = ListFlight.find(item=>item.ListOption[0].ListFlight[0].Leg===Leg) || null ; 
+            console.log(Flight) ; 
+            dispatch(handleFlightDetail(Flight))
+        }
+    }
   return (
     <Fragment>
         {listFlightInfo?.map(flight=>(
-            <div key={flight.Leg} className='px-4 py-3 flex flex-col gap-0'>
+            <div key={flight.Leg} className='px-3 py-3 flex flex-col gap-0'>
                 <Collapse
                     expandIcon={()=>null}
                     activeKey={[(findFlightItem(flight.Leg) ? 'show' : '')]}
@@ -56,7 +68,7 @@ const SelectFlight = () => {
                                     <FlightTime Flight={findFlightItem(flight.Leg)}></FlightTime>
                                     <div className='grid grid-cols-12 items-center gap-2'>
                                         <Button onClick={()=>dispatch(handleChangeFlight(flight.Leg))} className='col-span-9 transition-all duration-500 ease-in-out' color="danger" variant="filled">Change departure flight</Button>
-                                        <Button className='col-span-3 transition-all duration-500 ease-in-out' color="primary" variant="filled">Details</Button>
+                                        <Button onClick={()=>showFlightDetail(flight.Leg)} className='col-span-3 transition-all duration-500 ease-in-out' color="primary" variant="filled">Details</Button>
                                     </div>
                                 </div>
                             )}

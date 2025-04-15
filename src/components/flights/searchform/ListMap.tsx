@@ -1,6 +1,6 @@
 import React, { memo, useMemo,} from 'react';
 import ListAirport from '../../../api/jsondata/ListAirport.json';
-import { removeVietnameseTones } from '../../../utils/master';
+import { removeVietnameseTones } from '../../../utils/helper';
 import { List } from 'antd';
 
 interface IAirport {

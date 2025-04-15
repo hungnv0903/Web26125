@@ -1,7 +1,7 @@
 import React from 'react'
 import {useFlightContext } from './Flight'
-import { formatFlightNumber} from '../../utils/master';
 import FlightTime from './FlightTime';
+import { formatFlightNumber } from '../../utils/format';
 
 
 const FlightInfo = () => {
@@ -18,8 +18,10 @@ const FlightInfo = () => {
             </div>
             <FlightTime Flight={item}></FlightTime>
             <div className='hidden md:flex flex-col w-40 gap-0'>
-                <div className='font-bold italic text-pink-600 text-end font-serif'>
-                    {item.ListSegment[0].FareType}
+                <div className='flex justify-end font-bold italic text-pink-600 text-end font-serif'>
+                    <div className='text-fare-type'>
+                        {item.ListSegment[0].FareType}
+                    </div>
                 </div>
                 <div className='text-end'>
                     <span className='font-normal text-sm text-gray-400'>Ticket type : </span>

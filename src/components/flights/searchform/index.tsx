@@ -4,7 +4,7 @@ import Passenger from './Passenger';
 import { DatePicker, GetProps, Input, Popover, Select } from 'antd';
 import ListMap from './ListMap';
 import useDebounce from '../../../hook/useDebounce';
-import { AirportInfo } from '../../../utils/master';
+import { AirportInfo } from '../../../utils/helper';
 import { PassengerProp} from '../../../types/searchModel';
 import dayjs, { Dayjs } from 'dayjs';
 import { useMessage } from '../../../context/MessageProvider';
