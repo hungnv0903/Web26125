@@ -62,4 +62,4 @@ const Flight = ({flightInfo}:FlightContextProp) => {
   )
 }
 
-export default Flight
+export default React.memo(Flight) ; 

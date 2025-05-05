@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react'
 import YourFlights from './YourFlights'
-import Filter from './FlightFilter'
+import Filter from '../../components/flights/FlightFilter'
 import ListFlight from './ListFlight'
 import { FlightDetail } from '../../components/flights/FlightDetail'
 import { RootState } from '../../redux/store'

@@ -23,3 +23,15 @@ export function minutesToHours(minutes:number) {
   return `${Math.floor(minutes/60)}h : ${minutes%60}m` ; 
 }
 
+export const optionTransit = [
+    { label: 'Direct', value: 0 },
+    { label: '1 Transit(s)', value: 1 },
+    { label: '+2 transits', value: 2 },
+  ];
+  
+export  const optionTimeFlight = [
+    { ID: 1, Label: 'Night to Morning', Time: [0, 6] },
+    { ID: 2, Label: 'Morning to Noon', Time: [6, 12] },
+    { ID: 3, Label: 'Noon to Evening', Time: [12, 18] },
+    { ID: 4, Label: 'Evening to Night', Time: [18, 24] },
+  ];
