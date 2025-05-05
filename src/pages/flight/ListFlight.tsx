@@ -1,4 +1,4 @@
-import React, { Fragment, useEffect, useState } from 'react'
+import React, { Fragment, useEffect, useMemo, useState } from 'react'
 import Flight from '../../components/flights/Flight'
 import { useDispatch, useSelector } from 'react-redux'
 import { AppDispatch, RootState } from '../../redux/store'
@@ -6,6 +6,7 @@ import { IListFareData } from '../../types/flightModel';
 import { Progress, Select } from 'antd';
 import { AirlineProp, DurationProp, PricePassengerProp } from '../../types/filterModel';
 import { handleDataCollectionFilter } from '../../redux/dataCollectionFilterSlice';
+import SkeletonFlightCard from '../../components/flights/SkeletonFlightCard';
 
 const groupFlights = (dataAllFlight: IListFareData[]) => {
   const groups = new Map<string, IListFareData[]>();
@@ -33,7 +34,7 @@ const ListFlight = () => {
   const journey = useSelector((state:RootState)=>state.chooseFlightReducer.Journey) ; 
   const dataFlightFilter = useSelector((state:RootState)=>state.filterFlightReducer) ; 
   
-  const [isVisible, setIsVisible] = useState<boolean>(!isData?true:false);
+  const isLoadingState = useMemo(()=>isLoading , [isLoading]) ; 
   const [sortFlight , setSortFlight] = useState<string>('low') ; 
 
   const groupListFlightData = groupFlights(allFlight) ; 
@@ -91,7 +92,12 @@ const ListFlight = () => {
       dispatch(handleDataCollectionFilter({ListAirline:result,Duration:duration,PricePassenger:pricePassenger}))
     }
   }, [isData,listFlightRoute, dispatch]);
-  
+
+  const handleSortFlight = (value:string)=>{
+    setSortFlight(value) ; 
+  }
+
+
   const {Transit,DepartureTime, ArrivalTime,Airline,Duration,PricePassenger } = dataFlightFilter ;
   const listFlightShow =  listFlightRoute.filter(item=>{
     const flights = item.ListOption[0].ListFlight;
@@ -125,28 +131,16 @@ const ListFlight = () => {
 
   }).sort((a:IListFareData,b:IListFareData)=>{ //sort
     return sortFlight==='low' ? (a.PriceAdt-b.PriceAdt): b.PriceAdt-a.PriceAdt ; 
-    })
+    }); 
+
   
-  console.log(listFlightShow) ; 
-
-  useEffect(() => {
-          if (!isLoading) {
-            const timer = setTimeout(() => {
-              setIsVisible(false);
-            },500);
-            return () => clearTimeout(timer);
-          }
-    }, [isLoading]); 
-
-    const handleSortFlight = (value:string)=>{
-      setSortFlight(value) ; 
-    }
-    
+  console.log(listFlightShow) ;
+  
   return (
     <Fragment>
       <div>
         <div className='flex justify-between items-center'> 
-            <h3 className='text-lg md:text-2xl text-start font-medium text-orange-400'>
+            <h3 className='capitalize text-lg md:text-2xl text-start font-medium text-orange-400'>
                 {Domestic ? ` ${journey===0 ? 'Choose departure flight': journey===1 ? 'Choose return flight':''}` : 'Choose flight'}
             </h3>
         </div>
@@ -167,16 +161,23 @@ const ListFlight = () => {
                   />
               </div>
         </div>
-        { isVisible && (
+        { isLoadingState && (
             <div className='my-3 transition-all duration-500 ease-in-out'>
                 <Progress percent={progress} showInfo={false} status="active" />
                 <p className='text-center text-orange-400 font-semibold'>The system is searching for flights. Please wait... {progress}%</p>
             </div>
         )}
         <div className='flex flex-col gap-3 transition-all duration-500 ease-in-out'>
-          {listFlightShow.map(flight=>(
-              <Flight key={flight.keyFlight} flightInfo={flight} ></Flight>              
-          ))}
+          {
+            !isData ? Array.from({length:10}).map((_,index)=>(
+             <div key={index}>
+               <SkeletonFlightCard></SkeletonFlightCard>
+             </div>
+            ))
+            :listFlightShow.map(flight=>(
+                <Flight key={flight.keyFlight} flightInfo={flight} ></Flight>              
+            ))
+          }
         </div>
       </div>
      

@@ -1,3 +1,7 @@
+.shadow-custom {
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.3) ; 
+}
+
 .card-flight {
     box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.3) ; 
     &:hover{
@@ -53,4 +57,13 @@
                 }
             }
         }
+}
+
+.icon-required {
+    display: inline-block;
+    margin-inline-end: 4px;
+    color: #ff4d4f;
+    font-size: 14px;
+    font-family: SimSun, sans-serif;
+    line-height: 1;
 }

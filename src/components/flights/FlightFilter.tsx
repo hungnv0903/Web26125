@@ -12,24 +12,13 @@ import {
   handleResetDataFilter,
   handleTransitFilter,
 } from '../../redux/filterFlightSlice';
-import TimeFlightFilter from '../../components/flights/TimeFlightFilter';
-import RangeSlider from '../../components/ui/Slider/RangeSlider';
-import { AirlineInfo } from '../../utils/helper';
+import TimeFlightFilter from './TimeFlightFilter';
+import RangeSlider from '../ui/Slider/RangeSlider';
+import { AirlineInfo, optionTimeFlight, optionTransit } from '../../utils/helper';
 
-const optionTransit = [
-  { label: 'Direct', value: 0 },
-  { label: '1 Transit(s)', value: 1 },
-  { label: '+2 transits', value: 2 },
-];
 
-const optionTimeFlight = [
-  { ID: 1, Label: 'Night to Morning', Time: [0, 6] },
-  { ID: 2, Label: 'Morning to Noon', Time: [6, 12] },
-  { ID: 3, Label: 'Noon to Evening', Time: [12, 18] },
-  { ID: 4, Label: 'Evening to Night', Time: [18, 24] },
-];
 
-export interface TimeFilterProp {
+export interface TimeFlightFilterProp {
   ID: number;
   Event: string;
 }
@@ -67,9 +56,8 @@ const Filter = () => {
     const listDepartureTime = departureTimeIds.map((id) =>
       optionTimeFlight.find((item) => item.ID === id)?.Time
     );
-    if(departureTimeIds.length!==0){
-      dispatch(handleDepartureTimeFilter(listDepartureTime));
-    }
+    dispatch(handleDepartureTimeFilter(listDepartureTime));
+    
   }, [departureTimeIds, dispatch]);
 
 
@@ -78,9 +66,8 @@ const Filter = () => {
       optionTimeFlight.find((item) => item.ID === id)?.Time
     );
 
-    if(arrivalTimeIds.length !== 0){
-      dispatch(handleArrivalTimeFilter(listArrivalTime));
-    }
+    dispatch(handleArrivalTimeFilter(listArrivalTime));
+    
   }, [arrivalTimeIds, dispatch]);
 
   const onChangeTransit: GetProp<typeof Checkbox.Group, 'onChange'> = useCallback(
@@ -101,7 +88,7 @@ const Filter = () => {
   );
 
   const handleDepartureTime = useCallback(
-    (selectTime: TimeFilterProp) => {
+    (selectTime: TimeFlightFilterProp) => {
       if (selectTime.Event === 'Select') {
         setDepartureTimeIds((prev) => [...prev, selectTime.ID]);
       } else if (selectTime.Event === 'Remove') {
@@ -110,7 +97,7 @@ const Filter = () => {
     },[]);
 
   const handleArrivalTime = useCallback(
-    (selectTime: TimeFilterProp) => {
+    (selectTime: TimeFlightFilterProp) => {
       if (selectTime.Event === 'Select') {
         setArrivalTimeIds((prev) => [...prev, selectTime.ID]);
       } else if (selectTime.Event === 'Remove') {
