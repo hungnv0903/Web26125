@@ -1,14 +1,15 @@
-import { Modal } from 'antd'
-import React from 'react'
+import { handleFlightDetail } from '@/redux/flights/flightDetailSlide';
+import { AppDispatch, RootState } from '@/redux/store';
+import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { AppDispatch, RootState } from '../../redux/store';
-import { handleFlightDetail } from '../../redux/flightDetailSlide';
+import CommonModal from '../ui/Modal';
 
 
 
-export const FlightDetail = () => {
+
+export const FlightDetail = React.memo(() => {
     const dispath = useDispatch<AppDispatch>() ; 
-    const {isOpen,Flight} = useSelector((state:RootState)=>state.flightDetailReducer) ; 
+    const {isOpen,Flight} = useSelector((state:RootState)=>state.flights.flightDetailReducer) ; 
     console.log(isOpen , Flight) ; 
     const handleCancel = ()=>{
       dispath(handleFlightDetail(null)) ; 
@@ -16,11 +17,12 @@ export const FlightDetail = () => {
     
   return (
     <>
-      <Modal title="Basic Modal" open={isOpen} onCancel={handleCancel}>
-            <div>
-
-            </div>
-      </Modal>
+      <CommonModal 
+        open={isOpen}
+        onCancel={handleCancel}
+        content="This is flight detail"
+        footer={null}
+      />
     </>
   )
-}
+})

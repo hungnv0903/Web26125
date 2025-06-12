@@ -1,8 +1,8 @@
 import { Outlet } from 'react-router-dom'
 import Footer from './Footer'
 import { App } from 'antd'
-import { MessageProvider } from '../context/MessageProvider'
 import Navbar from './Navbar'
+import { MessageProvider } from '@/context/MessageProvider'
 
 const Layout = () => {
   return (

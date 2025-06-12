@@ -8,7 +8,7 @@ import { AirportInfo } from '../../../utils/helper';
 import { PassengerProp} from '../../../types/searchModel';
 import dayjs, { Dayjs } from 'dayjs';
 import { useMessage } from '../../../context/MessageProvider';
-import { useNavigate } from 'react-router-dom';
+
 
 const { RangePicker } = DatePicker;
 type RangePickerProps = GetProps<typeof DatePicker.RangePicker>;
@@ -52,7 +52,7 @@ const SearchFormFlight = () => {
     }
 
     
-    const navigate = useNavigate() ; 
+     
     const handleSearchFlight = ()=>{
         if(startPoint==='' || endPoint==='' || (journey && !dateRange) || (!journey && !dateSingle)){
             message.warning("Please fill all your journey's information!") ; 
@@ -62,8 +62,8 @@ const SearchFormFlight = () => {
             
             const departDate = (journey && dateRange)?dateRange.map((item)=>dayjs((item).toDate()).format('DDMMYYYY')):(!journey && dateSingle)?[dayjs((dateSingle).toDate()).format('DDMMYYYY')]:null ;  
             const urlFlightPage = `/flights?sp=${startPoint}&ep=${endPoint}&dt=${departDate?.join('.')}&ps=${passenger.Adt}.${passenger.Chd}.${passenger.Inf}`; 
-            navigate(urlFlightPage, { replace: true }) ; 
-            
+            // navigate(urlFlightPage, { replace: true }) ; 
+            window.location.href = urlFlightPage;
         }
         
     }

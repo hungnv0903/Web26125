@@ -1,10 +1,14 @@
-import React from 'react'
-import FareDetails from '../../components/flights/FareDetails'
-import SelectFlight from '../../components/flights/SelectFlight'
+
+import FareDetails from './FareDetails'
+import SelectFlight from './SelectFlight'
 import { Button } from 'antd'
 import { SearchOutlined } from '@ant-design/icons'
+import { useSelector } from 'react-redux'
+import { RootState } from '@/redux/store'
 
 const YourFlights = () => {
+  const {ListFlight, Adt,Chd,Inf} = useSelector((state:RootState)=>state.flights.searchFormReducer) ; 
+  const {ListSelectFlight,Matching} = useSelector((state:RootState)=>state.flights.chooseFlightReducer); 
   return (
     <>
        <div className='box-title-flight-detail flex items-center justify-between px-4 py-3 border-b-gray-400 border-b-2'>
@@ -16,8 +20,8 @@ const YourFlights = () => {
               <Button className='w-full' type="primary" shape="circle" size='middle' icon={<SearchOutlined />} />
           </div>
         </div>
-        <SelectFlight></SelectFlight>
-        <FareDetails></FareDetails>
+        <SelectFlight ListFlightInfo={ListFlight} ListSelectFlight={ListSelectFlight} Matching={Matching} ></SelectFlight>
+        <FareDetails ListSelectFlight={ListSelectFlight} Adt={Adt} Chd={Chd} Inf={Inf}></FareDetails>
     </>
   )
 }

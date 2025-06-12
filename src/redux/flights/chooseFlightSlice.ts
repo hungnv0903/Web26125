@@ -1,10 +1,10 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
-import { IListFareData, IListSelectFlight} from "../types/flightModel";
+import { IListFareData, IListSelectFlight} from "@/types/flightModel";
 
 
 const initialState:IListSelectFlight = {
     Status:false,
-    ListFlight:[] ,  
+    ListSelectFlight:[] ,  
     NumberChoose:0,
     Journey:0,
     Matching:false,
@@ -23,12 +23,12 @@ const chooseFlightSlice = createSlice({
                 const matchingFlight= action.payload.ListOption[0].ListFlight.length > 1 ? true : false ;             
                 state.Matching = matchingFlight ; 
                 if(matchingFlight){ 
-                    state.ListFlight = [action.payload] ; 
+                    state.ListSelectFlight = [action.payload] ; 
                     state.Status = true ; 
                 }else{
-                    state.ListFlight.push(action.payload) ; 
+                    state.ListSelectFlight.push(action.payload) ; 
                     state.Journey = state.Journey===0 ? 1 : 0 ; 
-                    if(state.NumberChoose===state.ListFlight.length){
+                    if(state.NumberChoose===state.ListSelectFlight.length){
                         state.Status = true ; 
                     }
                 }
@@ -37,11 +37,11 @@ const chooseFlightSlice = createSlice({
         },
         handleChangeFlight:(state,action:PayloadAction<number>)=>{
             if(state.Matching){
-                state.ListFlight = [] ; 
+                state.ListSelectFlight = [] ; 
                 state.Status = false ; 
             }else{
-                const newListFlight = state.ListFlight.filter(flight=>flight.ListOption[0].ListFlight[0].Leg!==action.payload) ; 
-                state.ListFlight = newListFlight ; 
+                const newListFlight = state.ListSelectFlight.filter(flight=>flight.ListOption[0].ListFlight[0].Leg!==action.payload) ; 
+                state.ListSelectFlight = newListFlight ; 
                 state.Journey = action.payload ; 
                 state.Status = false ; 
             } 

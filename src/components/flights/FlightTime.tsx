@@ -1,7 +1,7 @@
-import React from 'react'
-import { minutesToHours } from '../../utils/helper'
-import { IListFlight } from '../../types/flightModel'
-import { formatISODate } from '../../utils/format';
+import { IListFlight } from "@/types/flightModel";
+import { formatISODate } from "@/utils/format";
+import { minutesToHours } from "@/utils/helper";
+
 
 interface FlightTimeProp {
     Flight:IListFlight | undefined; 

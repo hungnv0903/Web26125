@@ -35,10 +35,10 @@ const ListMap = ({ searchValueProp, handleSelectAirportCode }: IPropSearchValue)
     if (!searchValueProp.trim()) {
       return convertAirport(listAirportPopular);
     }
-    const normalizedSearch = removeVietnameseTones(searchValueProp).toLowerCase();
+    const normalizedSearch = removeVietnameseTones(searchValueProp).trim().toLowerCase();
     return ListAirport.filter((airport) =>
         Object.values(airport).some((value: string) =>
-          removeVietnameseTones(value).toLowerCase().includes(normalizedSearch)
+          removeVietnameseTones(value).trim().toLowerCase().includes(normalizedSearch)
       )
     );
   },[searchValueProp, listAirportPopular]);

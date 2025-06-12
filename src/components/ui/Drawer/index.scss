@@ -1,0 +1,25 @@
+.ant-drawer-body {
+  overflow-y: auto;
+}
+
+.ant-drawer-body::-webkit-scrollbar {
+  width: 8px;
+}
+
+.ant-drawer-body::-webkit-scrollbar-track {
+  border-radius: 9999px;
+  background-color: #f3f4f6; /* gray-100 */
+}
+
+.ant-drawer-body::-webkit-scrollbar-thumb {
+  border-radius: 9999px;
+  background-color: #d1d5db; /* gray-300 */
+}
+
+.dark .ant-drawer-body::-webkit-scrollbar-track {
+  background-color: #374151; /* neutral-700 */
+}
+
+.dark .ant-drawer-body::-webkit-scrollbar-thumb {
+  background-color: #6b7280; /* neutral-500 */
+}

@@ -1,18 +1,26 @@
 import { Button, Collapse } from 'antd'
-import React, { Fragment } from 'react'
-import { useDispatch, useSelector } from 'react-redux';
-import { AppDispatch, RootState } from '../../redux/store';
-import { AirportInfo} from '../../utils/helper';
+import React, { Fragment, memo } from 'react'
+import { useDispatch} from 'react-redux';
+import { AppDispatch} from '@/redux/store';
+import { AirportInfo} from '@/utils/helper';
 import FlightTime from './FlightTime';
-import { handleChangeFlight } from '../../redux/chooseFlightSlice';
-import { handleFlightDetail } from '../../redux/flightDetailSlide';
-import { formatDate } from '../../utils/format';
+import { handleChangeFlight } from '@/redux/flights/chooseFlightSlice';
+import { handleFlightDetail } from '@/redux/flights/flightDetailSlide';
+import { formatDate } from '@/utils/format';
+import { IListFlightSearch } from '@/types/searchModel';
+import { IListFareData } from '@/types/flightModel';
+import { handleResetDataFilter } from '@/redux/flights/filterFlightSlice';
+import { handleClearFlightConfirm } from '@/redux/flights/flightConfirmSlice';
 
-const SelectFlight = () => {
+interface SelectFlightProp {
+    ListFlightInfo:IListFlightSearch[] | null ;
+    ListSelectFlight:IListFareData[] ;
+    Matching:boolean ; 
+}
+
+const SelectFlight = ({ListFlightInfo,ListSelectFlight,Matching}:SelectFlightProp) => {
     const dispatch = useDispatch<AppDispatch>() ; 
-    const listFlightInfo = useSelector((state:RootState)=>state.searchFormReducer.ListFlight) ; 
-    const {ListFlight,Matching} = useSelector((state:RootState)=>state.chooseFlightReducer); 
-    const newListSelectFlight = ListFlight.flatMap(item=>item.ListOption[0].ListFlight) ; 
+    const newListSelectFlight = ListSelectFlight.flatMap(item=>item.ListOption[0].ListFlight) ; 
    
     
     const findFlightItem = (leg:number)=>{
@@ -22,18 +30,23 @@ const SelectFlight = () => {
      
     const showFlightDetail = (Leg:number)=>{
         if(Matching){
-            console.log(ListFlight[0]) ; 
-            dispatch(handleFlightDetail(ListFlight[0])) ;
+            dispatch(handleFlightDetail(ListSelectFlight[0])) ;
              
         }else{
-            const Flight = ListFlight.find(item=>item.ListOption[0].ListFlight[0].Leg===Leg) || null ; 
-            console.log(Flight) ; 
+            const Flight = ListSelectFlight.find(item=>item.ListOption[0].ListFlight[0].Leg===Leg) || null ; 
             dispatch(handleFlightDetail(Flight))
         }
     }
+
+    const changeFlight = (Leg:number)=>{
+        dispatch(handleChangeFlight(Leg))
+        dispatch(handleResetDataFilter());
+        dispatch(handleClearFlightConfirm());
+    }
+
   return (
     <Fragment>
-        {listFlightInfo?.map(flight=>(
+        {ListFlightInfo?.map(flight=>(
             <div key={flight.Leg} className='px-3 py-3 flex flex-col gap-0'>
                 <Collapse
                     expandIcon={()=>null}
@@ -62,12 +75,12 @@ const SelectFlight = () => {
                                 <div className='price-detail flex flex-col gap-3 transition-all duration-500 ease-in-out'>
                                     <div className='flex items-center gap-3'>
                                         <div className='w-16 h-5 overflow-hidden flex items-center'>
-                                            <img className='w-full' src={`http://squirrel.kaotours.com/Assets/Airline/${findFlightItem(flight.Leg)?.Airline}.gif`} alt="" />
+                                            <img className='w-full' src={`http://flynow.vn/Assets/Airline/${findFlightItem(flight.Leg)?.Airline}.gif`} alt="" />
                                         </div>
                                     </div>                    
                                     <FlightTime Flight={findFlightItem(flight.Leg)}></FlightTime>
                                     <div className='grid grid-cols-12 items-center gap-2'>
-                                        <Button onClick={()=>dispatch(handleChangeFlight(flight.Leg))} className='col-span-9 transition-all duration-500 ease-in-out' color="danger" variant="filled">Change departure flight</Button>
+                                        <Button onClick={()=>changeFlight(flight.Leg)} className='col-span-9 transition-all duration-500 ease-in-out' color="danger" variant="filled">Change departure flight</Button>
                                         <Button onClick={()=>showFlightDetail(flight.Leg)} className='col-span-3 transition-all duration-500 ease-in-out' color="primary" variant="filled">Details</Button>
                                     </div>
                                 </div>
@@ -81,4 +94,4 @@ const SelectFlight = () => {
   )
 }
 
-export default SelectFlight
+export default memo(SelectFlight) ; 

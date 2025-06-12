@@ -1,7 +1,15 @@
+import { IListFareData } from '@/types/flightModel';
 import { Collapse } from 'antd'
-import React from 'react'
-import { useSelector } from 'react-redux';
-import { RootState } from '../../redux/store';
+import React, { memo } from 'react'
+
+
+interface FareDetailProp {
+   ListSelectFlight:IListFareData[] ;
+   Adt:number ; 
+   Chd:number ;
+   Inf:number ; 
+
+}
 interface TotalPriceProp {
   TotalPriceAdt:number ; 
   TotalPriceChd:number ; 
@@ -15,14 +23,12 @@ const initialTotalPrice:TotalPriceProp = {
   TotalPriceInf:0,
   TotalPrice:0,
 }
-const FareDetails = () => {
-  const listSelectFlight = useSelector((state:RootState)=>state.chooseFlightReducer.ListFlight); 
-   const {Adt,Chd,Inf} = useSelector((state:RootState)=>state.searchFormReducer) ; 
-  // console.log("Fare" , listSelectFlight) ; 
-  const totalPrice = listSelectFlight.reduce((acc: TotalPriceProp, item) => {
-    const newTotalPriceAdt = acc.TotalPriceAdt + item.PriceAdt;
-    const newTotalPriceChd = acc.TotalPriceChd + item.PriceChd;
-    const newTotalPriceInf = acc.TotalPriceInf + item.PriceInf;
+const FareDetails = ({ListSelectFlight , Adt,Chd,Inf}:FareDetailProp) => {
+
+  const totalPrice = ListSelectFlight.reduce((acc: TotalPriceProp, item) => {
+    const newTotalPriceAdt = acc.TotalPriceAdt + item.PriceAdt* Adt;
+    const newTotalPriceChd = acc.TotalPriceChd + item.PriceChd * Chd;
+    const newTotalPriceInf = acc.TotalPriceInf + item.PriceInf * Inf;
     const newTotalPrice = newTotalPriceAdt + newTotalPriceChd + newTotalPriceInf;
 
     return {
@@ -32,9 +38,6 @@ const FareDetails = () => {
       TotalPrice: newTotalPrice,
     };
   }, initialTotalPrice);
-
-  // console.log(totalPrice) ; 
-
 
   return (
     <div className='box-price-detail px-3 py-3'>
@@ -87,4 +90,4 @@ const FareDetails = () => {
   )
 }
 
-export default FareDetails
+export default memo(FareDetails) ; 

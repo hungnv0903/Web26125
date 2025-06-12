@@ -1,11 +1,11 @@
+import { AppDispatch } from '@/redux/store';
+import { IListFareData } from '@/types/flightModel';
 import { Button } from 'antd'
 import React, { createContext, useContext } from 'react'
-import { IListFareData} from '../../types/flightModel'
+import { useDispatch } from 'react-redux';
 import FlightInfo from './FlightInfo';
-import { useDispatch} from 'react-redux';
-import { AppDispatch} from '../../redux/store';
-import { handleChooseFlight } from '../../redux/chooseFlightSlice';
-import { handleFlightDetail } from '../../redux/flightDetailSlide';
+import { handleFlightDetail } from '@/redux/flights/flightDetailSlide';
+import { handleChooseFlight } from '@/redux/flights/chooseFlightSlice';
 
 interface FlightInfoProp extends IListFareData {
     TicketOrtherNumber: number ;

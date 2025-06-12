@@ -1,7 +1,7 @@
 import { createAsyncThunk, createSlice, PayloadAction } from "@reduxjs/toolkit";
-import { IListFareData, IResponseAllFlight } from "../types/flightModel";
-import { IPostFlightData, ISearchData } from "../types/searchModel";
-import getFlightsApi from "../services/flightService";
+import { IListFareData, IResponseFlight } from "@/types/flightModel";
+import { IPostFlightData, ISearchData } from "@/types/searchModel";
+import getFlightsApi from "@/services/flightService";
 import axios from "axios";
 
 
@@ -28,7 +28,7 @@ export const fetchDataFlight = createAsyncThunk(
         const {flightSearch,systems} = searchData ; 
         try {
             let isLoading = true ; 
-            const updateResult = (newResult:IResponseAllFlight)=>{
+            const updateResult = (newResult:IResponseFlight)=>{
                 dispatch(handleUpdateFlight(newResult)) ; 
             }
 
@@ -72,7 +72,7 @@ const searchFlightSlice = createSlice({
     name:"searchFlight",
     initialState,
     reducers:{
-        handleUpdateFlight:(state,action:PayloadAction<IResponseAllFlight>)=>{
+        handleUpdateFlight:(state,action:PayloadAction<IResponseFlight>)=>{
             if(action.payload.ListFareData){
                 state.allFlight.push(...action.payload.ListFareData) ; 
                 if(!state.isData && action.payload.ListFareData.length!==0){

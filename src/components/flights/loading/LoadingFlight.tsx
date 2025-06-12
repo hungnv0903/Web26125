@@ -1,8 +1,9 @@
 import {Skeleton } from 'antd';
 import React from 'react';
 
-const SkeletonFlightCard: React.FC = () => {
+const LoadingFlight: React.FC = () => {
   return (
+    <>
     <div className="card-flight cursor-pointer rounded-2xl p-3 transition-all duration-500 ease-in-out">
         <div className="flex items-center justify-center md:justify-between gap-3">
             <div className='hidden md:flex items-center overflow-hidden'>
@@ -31,8 +32,9 @@ const SkeletonFlightCard: React.FC = () => {
             <Skeleton.Button active size="default" shape="round" style={{ width: 96 }} />
         </div>
         </div>
-  </div>
+    </div>
+    </>
   );
 };
 
-export default SkeletonFlightCard;
+export default LoadingFlight;

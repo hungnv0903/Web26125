@@ -1,6 +1,6 @@
 
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
-import {ISearchFlight} from '../types/searchModel';
+import {ISearchFlight} from '@/types/searchModel';
 
 // import dayjs from 'dayjs';
 // const initialDepartdate = dayjs((dayjs().add(1, 'day')).toDate()).format('DDMMYYYY') ; 

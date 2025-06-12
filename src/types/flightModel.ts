@@ -97,7 +97,7 @@ export interface IListFareData {
     "ListOption":IListOption[];
 }
 
-export interface IResponseAllFlight {
+export interface IResponseFlight {
     "Session": string ; 
     "ListFareData":IListFareData[];
     "Status": boolean;
@@ -108,7 +108,7 @@ export interface IResponseAllFlight {
 
 export interface IListSelectFlight {
     Status:boolean ; 
-    ListFlight: IListFareData[] ; 
+    ListSelectFlight: IListFareData[] ; 
     NumberChoose:number ; 
     Journey:number | null ; 
     Matching:boolean ; 
