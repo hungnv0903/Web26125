@@ -31,10 +31,12 @@ const TimeFlightFilter = ({Reset,TimeFilter,selectTimeFilter}:SelectTimeFilterPr
     setActiveTimeFilter(!activeTimeFilter) ; 
   }
   return (
+    <>
     <div onClick={handleSelectTimeFilter} className={`${activeTimeFilter ? "active-time-filter" :""} time-filter py-2 border border-gray-300 rounded-md transition-all duration-500 ease-in-out`}>
         <div className='text-gray-500'>{Label}</div>
         <div className='font-bold text-blue-400'>{String(Time[0]).padStart(2, '0')}:00 - {String(Time[1]).padStart(2,'0')}:00</div>
     </div>
+    </>
   )
 }
 

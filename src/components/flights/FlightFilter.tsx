@@ -1,20 +1,19 @@
+import { handleAirlineFilter,
+    handleArrivalTimeFilter,
+    handleDepartureTimeFilter,
+    handleDurationFilter,
+    handlePricePassengerFilter,
+    handleResetDataFilter,
+    handleTransitFilter } from '@/redux/flights/filterFlightSlice';
+import { AppDispatch, RootState } from '@/redux/store';
+import { AirlineInfo, optionTimeFlight, optionTransit } from '@/utils/helper';
 import { ReloadOutlined } from '@ant-design/icons';
 import { Button, Checkbox, Collapse, GetProp } from 'antd';
 import React, { Fragment, useCallback, useEffect, useMemo, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { AppDispatch, RootState } from '../../redux/store';
-import {
-  handleAirlineFilter,
-  handleArrivalTimeFilter,
-  handleDepartureTimeFilter,
-  handleDurationFilter,
-  handlePricePassengerFilter,
-  handleResetDataFilter,
-  handleTransitFilter,
-} from '../../redux/filterFlightSlice';
 import TimeFlightFilter from './TimeFlightFilter';
 import RangeSlider from '../ui/Slider/RangeSlider';
-import { AirlineInfo, optionTimeFlight, optionTransit } from '../../utils/helper';
+
 
 
 
@@ -26,9 +25,9 @@ export interface TimeFlightFilterProp {
 const Filter = () => {
   const dispatch = useDispatch<AppDispatch>();
   const { ListAirline, Duration, PricePassenger } = useSelector(
-    (state: RootState) => state.dataCollectionFlightReducer
+    (state: RootState) => state.flights.dataCollectionFlightReducer
   );
-  const isData = useSelector((state: RootState) => state.searchFlightReducer.isData);
+  const isData = useSelector((state: RootState) => state.flights.searchFlightReducer.isData);
 
   const [departureTimeIds, setDepartureTimeIds] = useState<number[]>([]);
   const [arrivalTimeIds, setArrivalTimeIds] = useState<number[]>([]);
@@ -189,7 +188,7 @@ const Filter = () => {
                               <div className="w-16 hidden md:flex items-center h-5 overflow-hidden">
                                 <img
                                   className="w-full h-full object-contain"
-                                  src={`http://squirrel.kaotours.com/Assets/Airline/${air.Airline}.gif`}
+                                  src={`http://flynow.vn/Assets/Airline/${air.Airline}.gif`}
                                   alt="logo"
                                 />
                               </div>

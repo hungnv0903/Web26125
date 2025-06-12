@@ -1,5 +1,5 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
-import {IDataCollectionFilter} from "../types/filterModel";
+import {IDataCollectionFilter} from "@/types/filterModel";
 
 
 const initialState:IDataCollectionFilter= {

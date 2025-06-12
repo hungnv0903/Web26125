@@ -1,5 +1,5 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
-import { IListFareData } from "../types/flightModel";
+import { IListFareData } from "@/types/flightModel";
 
 interface initialStateProp  {
     isOpen:boolean ; 

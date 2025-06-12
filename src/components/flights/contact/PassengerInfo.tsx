@@ -1,7 +1,9 @@
 import { ContactsOutlined } from '@ant-design/icons'
 import { Col, DatePicker, Form, Input, Radio, Row } from 'antd'
-import { ListTypePassengerProp } from '../../types/contactModel';
+import { ListTypePassengerProp } from '@/types/contactModel';
 import dayjs from 'dayjs';
+import { removeVietnameseTones } from '@/utils/helper';
+import { Fragment } from 'react/jsx-runtime';
 
 export type PassengerInfo = {
   Gender:boolean ; 
@@ -55,7 +57,8 @@ const PassengerInfo = ({ListTypePassengerProp}:IListTypePassengerProp) => {
     return {} ; 
   }
   return (
-    <div className='shadow-custom rounded-md overflow-hidden mt-7'>
+    <Fragment>
+    <div className='shadow-lg rounded-md overflow-hidden mt-7'>
       <div className='mb-3'>
         <h3 className='capitalize text-lg text-start font-semibold bg-blue-400 text-white px-2 py-1.5'>
         <ContactsOutlined className='me-2 text-xl' />
@@ -99,6 +102,7 @@ const PassengerInfo = ({ListTypePassengerProp}:IListTypePassengerProp) => {
                     label="Last Name"
                     name={[field.name,'LastName']}
                     rules={[{ required: true, message: 'Please input your last name!' }]}
+                    normalize={(value: string) => value? removeVietnameseTones(value).toUpperCase():''}
                      className='text-start md:text-center'
                     >
                     <Input size="large" />
@@ -109,6 +113,7 @@ const PassengerInfo = ({ListTypePassengerProp}:IListTypePassengerProp) => {
                     label="Given Name"
                     name={[field.name,'FirstName']}
                     rules={[{ required: true, message: 'Please input your given name!' }]}
+                    normalize={(value: string) => value? removeVietnameseTones(value).toUpperCase():''}
                      className='text-start md:text-center'
                     >
                     <Input size="large" />
@@ -124,7 +129,7 @@ const PassengerInfo = ({ListTypePassengerProp}:IListTypePassengerProp) => {
                     <DatePicker 
                       size='large' 
                       className='w-full' 
-                      placeholder='' 
+                      placeholder='dd/mm/yyyy' 
                       format="DD/MM/YYYY"  
                       disabledDate={getDisableDatePassenger(ps.Type)}
                       minDate={getLimitDatePassenger(ps.Type)?.MinDate}
@@ -143,6 +148,7 @@ const PassengerInfo = ({ListTypePassengerProp}:IListTypePassengerProp) => {
      
       </Form.List> 
     </div>
+    </Fragment>
   )
 }
 

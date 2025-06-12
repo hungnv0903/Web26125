@@ -1,5 +1,5 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
-import { IFlightFilter} from "../types/filterModel";
+import { IFlightFilter} from "@/types/filterModel";
 
 const initialState:IFlightFilter = {
     Airline:[],

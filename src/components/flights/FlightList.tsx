@@ -1,12 +1,12 @@
-import React, { Fragment, useEffect, useMemo, useState } from 'react'
-import Flight from '../../components/flights/Flight'
+import { Fragment, useEffect, useMemo, useState } from 'react'
+import Flight from './Flight'
 import { useDispatch, useSelector } from 'react-redux'
-import { AppDispatch, RootState } from '../../redux/store'
-import { IListFareData } from '../../types/flightModel';
+import { AppDispatch, RootState } from '@/redux/store'
+import { IListFareData } from '@/types/flightModel';
 import { Progress, Select } from 'antd';
-import { AirlineProp, DurationProp, PricePassengerProp } from '../../types/filterModel';
-import { handleDataCollectionFilter } from '../../redux/dataCollectionFilterSlice';
-import SkeletonFlightCard from '../../components/flights/SkeletonFlightCard';
+import { AirlineProp, DurationProp, PricePassengerProp } from '@/types/filterModel';
+import { handleDataCollectionFilter } from '@/redux/flights/dataCollectionFilterSlice';
+import LoadingFlight from './loading/LoadingFlight';
 
 const groupFlights = (dataAllFlight: IListFareData[]) => {
   const groups = new Map<string, IListFareData[]>();
@@ -27,12 +27,12 @@ const groupFlights = (dataAllFlight: IListFareData[]) => {
   return groups ; 
 };
 
-const ListFlight = () => {
+const FlightList = () => {
   const dispatch = useDispatch<AppDispatch>() ; 
-  const {Domestic} = useSelector((state:RootState)=>state.searchFormReducer) ; 
-  const {progress,isLoading,allFlight,isData} = useSelector((state:RootState)=>state.searchFlightReducer) ; 
-  const journey = useSelector((state:RootState)=>state.chooseFlightReducer.Journey) ; 
-  const dataFlightFilter = useSelector((state:RootState)=>state.filterFlightReducer) ; 
+  const {Domestic} = useSelector((state:RootState)=>state.flights.searchFormReducer) ; 
+  const {progress,isLoading,allFlight,isData} = useSelector((state:RootState)=>state.flights.searchFlightReducer) ; 
+  const journey = useSelector((state:RootState)=>state.flights.chooseFlightReducer.Journey) ; 
+  const dataFlightFilter = useSelector((state:RootState)=>state.flights.filterFlightReducer) ; 
   
   const isLoadingState = useMemo(()=>isLoading , [isLoading]) ; 
   const [sortFlight , setSortFlight] = useState<string>('low') ; 
@@ -171,7 +171,7 @@ const ListFlight = () => {
           {
             !isData ? Array.from({length:10}).map((_,index)=>(
              <div key={index}>
-               <SkeletonFlightCard></SkeletonFlightCard>
+               <LoadingFlight></LoadingFlight>
              </div>
             ))
             :listFlightShow.map(flight=>(
@@ -185,4 +185,4 @@ const ListFlight = () => {
   )
 }
 
-export default ListFlight
+export default FlightList

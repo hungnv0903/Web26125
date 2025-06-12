@@ -1,7 +1,8 @@
-import React from 'react'
-import {useFlightContext } from './Flight'
-import FlightTime from './FlightTime';
-import { formatFlightNumber } from '../../utils/format';
+import { formatFlightNumber } from "@/utils/format";
+import { useFlightContext } from "./Flight";
+import FlightTime from "./FlightTime";
+
+
 
 
 const FlightInfo = () => {
@@ -11,7 +12,7 @@ const FlightInfo = () => {
     {flightInfo.ListOption[0].ListFlight.map((item,index)=>(
         <div key={item.FlightValue} className={`${index > 0 ? 'mt-5' : ''} flex items-center justify-center md:justify-between gap-3`}>
             <div className='w-20 hidden md:flex items-center h-5 overflow-hidden'>
-                <img className='w-full h-full object-contain' src={`http://squirrel.kaotours.com/Assets/Airline/${item.Airline}.gif`} alt="logo" />
+                <img className='w-full h-full object-contain' src={`http://flynow.vn/Assets/Airline/${item.Airline}.gif`} alt="logo" />
             </div>
             <div className='w-20 hidden md:block'>
                 <span className="font-family-none font-semibold text-sm italic text-pink-600">{formatFlightNumber(item.FlightNumber)}</span>

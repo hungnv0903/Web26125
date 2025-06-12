@@ -1,19 +1,27 @@
 import { combineReducers, configureStore } from "@reduxjs/toolkit";
-import searchFormSlice from './searchFormSlice';
-import searchFlightSlice from './searchFlightsSlice';
-import chooseFlightSlice from './chooseFlightSlice' ; 
-import flightDetailSlice from './flightDetailSlide' ; 
-import filterFlightSlice from "./filterFlightSlice";
-import dataCollectionFilterSlice from "./dataCollectionFilterSlice";
+import searchFormSlice from './flights/searchFormSlice';
+import searchFlightSlice from './flights/searchFlightsSlice';
+import chooseFlightSlice from './flights/chooseFlightSlice' ; 
+import flightDetailSlice from './flights/flightDetailSlide' ; 
+import filterFlightSlice from "./flights/filterFlightSlice";
+import dataCollectionFilterSlice from "./flights/dataCollectionFilterSlice";
+import contactFormSlice from "./flights/contactFormSlice";
+import flightConfirmSlice from "./flights/flightConfirmSlice";
 
-const rootReducer = combineReducers({
+const flightsReducer = combineReducers({
     searchFormReducer: searchFormSlice,
     searchFlightReducer:searchFlightSlice,
     chooseFlightReducer:chooseFlightSlice,
     flightDetailReducer:flightDetailSlice,
     filterFlightReducer:filterFlightSlice,
     dataCollectionFlightReducer:dataCollectionFilterSlice,
+    contactFormReducer:contactFormSlice,
+    flightConfirmReducer:flightConfirmSlice,
 })
+
+const rootReducer = combineReducers({
+    flights: flightsReducer,
+});
 
 const store = configureStore({
     reducer: rootReducer,
